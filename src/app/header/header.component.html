@@ -97,9 +97,17 @@
                             </a>
                         </div>
                         <div>
-                            <div (click)="navigate()" class="me-3 avatar-container d-flex justify-content-center">
-                                <img src="./assets/images/avatar.jpg" alt="">
-                            </div>
+                          
+
+                              <div  class="profile-dropdown me-3 avatar-container d-flex justify-content-center profile-dropdown" (click)="navigate()">
+                                <button class="profile-btn">
+                                  <img src="./assets/images/avatar.jpg" alt="Profile">
+                                </button>
+                              
+                                <ul class="dropdown-menu">
+                                  <li><a (click)="navigateToFamilyView($event)">Family View</a></li>
+                                </ul>
+                              </div>
                         </div>
                     </div>
                 </div>

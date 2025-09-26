@@ -52,6 +52,7 @@ import { ListComponent } from './list/list.component';
 import { ListDownloadComponent } from './list-download/list-download.component';
 import { ToastContainerModule, ToastrModule } from 'ngx-toastr';
 import { PaymentComponent } from './payment/payment.component';
+import { FamilyViewComponent } from './family-view/family-view/family-view.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new MultiTranslateHttpLoader(http,
@@ -92,7 +93,8 @@ export function appInitializerFactory(translate: TranslateService, injector: Inj
     InboxDownloadComponent,
     ListComponent,
     ListDownloadComponent,
-    PaymentComponent
+    PaymentComponent,
+    FamilyViewComponent
   ],
   imports: [
     MatNativeDateModule,

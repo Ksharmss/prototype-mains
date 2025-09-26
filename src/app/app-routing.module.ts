@@ -10,6 +10,7 @@ import { InboxDownloadComponent } from './inbox-download/inbox-download.componen
 import { ListDownloadComponent } from './list-download/list-download.component';
 import { RescheduleComponent } from './reschedule/reschedule.component';
 import { PaymentComponent } from './payment/payment.component';
+import { FamilyViewComponent } from './family-view/family-view/family-view.component';
 
 const routes: Routes = [
   {
@@ -51,6 +52,10 @@ const routes: Routes = [
   {
     path: 'listdownload',
     component: ListDownloadComponent
+  },
+  {
+    path: 'familyView',
+    component: FamilyViewComponent
   }
 ];
 

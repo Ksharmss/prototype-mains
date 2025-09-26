@@ -32,7 +32,12 @@ export class HeaderComponent implements OnInit {
     console.log("navvv", this.router.url)
     if (this.router.url == '/list') {
       this.router.navigateByUrl('/inboxDownload');
-    } else {
+    } 
+    else if(this.router.url == '/familyView')
+    {
+      this.router.navigateByUrl('/familyView');
+    }
+    else {
       this.router.navigateByUrl('/')
     }
   }
@@ -80,7 +85,10 @@ export class HeaderComponent implements OnInit {
       document.cookie = `${'lang'}=${language};${expires};${''};`
     }
   }
-
+  navigateToFamilyView(e)
+  {
+ this.router.navigateByUrl('/familyView');
+  }
   setObserveValues(currentLang: string) {
     this.appGlobals.setLangStatus(currentLang);
   }
