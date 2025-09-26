@@ -1,0 +1,217 @@
+<div class="pre-marital-screening-list-container">
+    <app-header-banner pageTitle="{{'preMarital.title' | translate}}"></app-header-banner>
+    <div class="container" [dir]="currentLang == 'en'? 'ltr': 'rtl'">
+        <div class="mt-3 mb-3 new-appointment-button-container d-flex justify-content-end">
+            <button mat-flat-button (click)="book()" class="mx-4 bg-warm-grey color-white">
+                {{'common.newAppointment' | translate}}
+            </button>
+        </div>
+        <div class="card-container">
+            <div class="card mb-4">
+                <div class="header p-3 fs18">
+                    US2025PMS4236621
+                </div>
+                <div class="card-body">
+                    <div class="fw-bold mb-2 fs18">
+                        {{'preMarital.step3.appointmentDetails' | translate}}
+                    </div>
+                    <div class="spouse-details row d-flex flex-wrap"
+                        [ngClass]="currentLang == 'en'? 'flex-row en' : 'ar'">
+                        <div class="details-holder mb-3 d-flex col-12 col-sm-12 col-md-6 col-lg-4"
+                            [dir]="currentLang == 'en'? 'ltr': 'rtl'">
+                            <div class="icon-holder d-flex align-items-center">
+                                <i class="me-2 fw-bold fa-solid fa-address-card"></i>
+                            </div>
+                            <div class="label-value-holder">
+                                <div class="label fw-bold color-dark-grey">
+                                    {{'preMarital.step2.emiratesId' | translate}}
+                                </div>
+                                <div class="value">784199354364738</div>
+                            </div>
+                        </div>
+                        <div class="details-holder mb-3 d-flex col-12 col-sm-12 col-md-6 col-lg-4"
+                            [dir]="currentLang == 'en'? 'ltr': 'rtl'">
+                            <div class="icon-holder d-flex align-items-center">
+                                <i class="me-2 fw-bold fa-solid fa-person"></i>
+                            </div>
+                            <div class="label-value-holder">
+                                <div class="label fw-bold color-dark-grey">
+                                    {{'preMarital.step2.name' | translate}}
+                                </div>
+                                <div *ngIf="currentLang == 'en'" class="value">Ahmed Hussain</div>
+                                <div *ngIf="currentLang == 'ar'" class="value">احمد حسين</div>
+                            </div>
+                        </div>
+                        <div class="details-holder mb-3 d-flex col-12 col-sm-12 col-md-6 col-lg-4"
+                            [dir]="currentLang == 'en'? 'ltr': 'rtl'">
+                            <div class="icon-holder d-flex align-items-center">
+                                <i class="me-2 fw-bold fa-solid fa-city"></i>
+                            </div>
+                            <div class="label-value-holder">
+                                <div class="label fw-bold color-dark-grey">
+                                    {{'preMarital.step3.emirate' | translate}}
+                                </div>
+                                <div *ngIf="currentLang == 'en'" class="value">
+                                    {{savedData.appointmentDetails.emirate.emirateNameEn}}</div>
+                                <div *ngIf="currentLang == 'ar'" class="value">
+                                    {{savedData.appointmentDetails.emirate.emirateNameAr}}</div>
+                            </div>
+                        </div>
+                        <div class="details-holder mb-3 d-flex col-12 col-sm-12 col-md-6 col-lg-4"
+                            [dir]="currentLang == 'en'? 'ltr': 'rtl'">
+                            <div class="icon-holder d-flex align-items-center">
+                                <i class="me-2 fw-bold fa-solid fa-hospital"></i>
+                            </div>
+                            <div class="label-value-holder">
+                                <div class="label fw-bold color-dark-grey">
+                                    {{'preMarital.step3.healthCenter' | translate}}
+                                </div>
+                                <div *ngIf="currentLang == 'en'" class="value">
+                                    {{savedData.appointmentDetails.healthCenter.healthCenterEn}}</div>
+                                <div *ngIf="currentLang == 'ar'" class="value">
+                                    {{savedData.appointmentDetails.healthCenter.healthCenterAr}}</div>
+                            </div>
+                        </div>
+                        <div class="details-holder mb-3 d-flex col-12 col-sm-12 col-md-6 col-lg-4"
+                            [dir]="currentLang == 'en'? 'ltr': 'rtl'">
+                            <div class="icon-holder d-flex align-items-center">
+                                <i class="me-2 fw-bold fa-solid fa-user-doctor"></i>
+                            </div>
+                            <div class="label-value-holder">
+                                <div class="label fw-bold color-dark-grey">
+                                    {{'preMarital.step3.doctor' | translate}}
+                                </div>
+                                <div *ngIf="currentLang == 'en'" class="value">
+                                    {{savedData.appointmentDetails.doctor.doctorEn}}</div>
+                                <div *ngIf="currentLang == 'ar'" class="value">
+                                    {{savedData.appointmentDetails.doctor.doctorAr}}</div>
+                            </div>
+                        </div>
+                        <div class="details-holder mb-3 d-flex col-12 col-sm-12 col-md-6 col-lg-4"
+                            [dir]="currentLang == 'en'? 'ltr': 'rtl'">
+                            <div class="icon-holder d-flex align-items-center">
+                                <i class="me-2 fw-bold fa-solid fa-calendar-days"></i>
+                            </div>
+                            <div class="label-value-holder">
+                                <div class="label fw-bold color-dark-grey">
+                                    {{'preMarital.step3.dateTime' | translate}}
+                                </div>
+                                <div [dir]="currentLang == 'en' ? 'ltr': 'ltr'" class="value">
+                                    <span> {{savedData.appointmentDetails.date | date: 'd MMM y' }}</span>
+                                    <span>, {{savedData.selectedTimeSlot}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div [dir]="currentLang == 'en'? 'ltr': 'rtl'">
+                            <div class="fw-bold mb-2 fs18">
+                                {{'preMarital.step2.title' | translate}}
+                            </div>
+                            <div>
+                                <div class="spouse-details row d-flex flex-wrap"
+                                    [ngClass]="currentLang == 'en'? 'flex-row en' : 'ar'">
+                                    <div class="details-holder mb-3 d-flex col-12 col-sm-12 col-md-6 col-lg-4"
+                                        [dir]="currentLang == 'en'? 'ltr': 'rtl'">
+                                        <div class="icon-holder d-flex align-items-center">
+                                            <i class="me-2 fw-bold fa-solid fa-address-card"></i>
+                                        </div>
+                                        <div class="label-value-holder">
+                                            <div class="label fw-bold color-dark-grey">
+                                                {{'preMarital.step2.emiratesId' | translate}}
+                                            </div>
+                                            <div class="value">{{savedData.partnerEmiratesId}}</div>
+                                        </div>
+                                    </div>
+                                    <div class="details-holder mb-3 d-flex col-12 col-sm-12 col-md-6 col-lg-4"
+                                        [dir]="currentLang == 'en'? 'ltr': 'rtl'">
+                                        <div class="icon-holder d-flex align-items-center">
+                                            <i class="me-2 fw-bold fa-solid fa-persom"></i>
+                                        </div>
+                                        <div class="label-value-holder">
+                                            <div class="label fw-bold color-dark-grey">
+                                                {{'preMarital.step2.name' | translate}}
+                                            </div>
+                                            <div *ngIf="currentLang == 'en'" class="value">
+                                                {{savedData.partnerFullNameEn}}</div>
+                                            <div *ngIf="currentLang == 'ar'" class="value">
+                                                {{savedData.partnerFullNameAr}}</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <div [dir]="currentLang == 'en'? 'ltr': 'rtl'">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <div class="fw-bold fs18">
+                                    {{'familyBook.paymentDetails' | translate}}
+                                </div>
+                                <div class="mx-2 d-flex align-items-center cursor-pointer">
+                                    <i class="fw-bold material-icons fs28 print-icon color-dark-grey">print</i>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="spouse-details row d-flex flex-wrap"
+                                    [ngClass]="currentLang == 'en'? 'flex-row en' : 'ar'">
+                                    <div class="details-holder mb-3 d-flex col-12 col-sm-12 col-md-6 col-lg-4"
+                                        [dir]="currentLang == 'en'? 'ltr': 'rtl'">
+                                        <div class="icon-holder d-flex align-items-center">
+                                            <i class="me-2 fw-bold fa-solid fa-arrow-up-1-9"></i>
+                                        </div>
+                                        <div class="label-value-holder">
+                                            <div class="label fw-bold color-dark-grey">
+                                                {{'common.URN' | translate}}
+                                            </div>
+                                            <div class="value">10698699472839483292</div>
+                                        </div>
+                                    </div>
+                                    <div class="details-holder mb-3 d-flex col-12 col-sm-12 col-md-6 col-lg-4"
+                                        [dir]="currentLang == 'en'? 'ltr': 'rtl'">
+                                        <div class="icon-holder d-flex align-items-center">
+                                            <i class="me-2 fw-bold fa-solid fa-money-check"></i>
+                                        </div>
+                                        <div class="label-value-holder">
+                                            <div class="label fw-bold color-dark-grey">
+                                                {{'common.amount' | translate}}
+                                            </div>
+                                            <div class="value">
+                                                <span>{{'familyBook.aed'|translate}} </span>
+                                                <span>100.71</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="details-holder mb-3 d-flex col-12 col-sm-12 col-md-6 col-lg-4"
+                                        [dir]="currentLang == 'en'? 'ltr': 'rtl'">
+                                        <div class="icon-holder d-flex align-items-center">
+                                            <i class="me-2 fw-bold fa-solid fa-calendar-days"></i>
+                                        </div>
+                                        <div class="label-value-holder">
+                                            <div class="label fw-bold color-dark-grey">
+                                                {{'common.transDate' | translate}}
+                                            </div>
+                                            <div [dir]="currentLang == 'en' ? 'ltr': 'ltr'" class="value">
+                                                {{paymentDate | date: 'd MMM y, h:mm a'}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3 mb-3 new-appointment-button-container d-flex justify-content-center">
+                        <button mat-stroked-button (click)="back()" class="mx-4">
+                            {{'common.back' | translate}}
+                        </button>
+                        <button mat-flat-button (click)="download()" class="mx-4 bg-warm-grey color-white">
+                            {{'common.download' | translate}}
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+@import '../../assets/common/stylevariable.less';
+
+.footer-container {
+    margin-top: 20px;
+    border-radius: 15px;
+
+    .footer-content {
+        .title {
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .footer-label {
+            font-size: 14px;
+            margin-bottom: 15px;
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .logo-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .usrati {
+            width: 370px;
+            height: auto;
+        }
+
+        .ica {
+            width: 260px;
+            height: auto;
+        }
+    }
+
+    .copyright {
+        font-size: 14px;
+        font-weight: 500;
+        color: @color-grey-3;
+    }
+}

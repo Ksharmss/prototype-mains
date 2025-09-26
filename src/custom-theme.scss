@@ -1,0 +1,106 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+$color-primary: #B68A35;
+$color-secondary: #344b61;
+$color-warn: #D83731;
+$color-black: #1B1D21;
+$color-white: #ffffff;
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+$mat-primary: (
+    50: $color-primary,
+    100: #F2EADB,
+    200: #E4D5B6,
+    300: #D6BE8E,
+    400: #C5A25D,
+    500: $color-primary,
+    600: #99742D,
+    700: #7C5E24,
+    800: #5F481C,
+    900: #413213,
+    contrast: (50: $color-white,
+        100: $color-black,
+        200: $color-black,
+        300: $color-black,
+        400: $color-white,
+        500: $color-white,
+        600: $color-white,
+        700: $color-white,
+        800: $color-white,
+        900: $color-white,
+    )
+);
+
+$mat-secondary: (
+    50: $color-secondary,
+    100: #E8E9EE,
+    200: #D1D1DD,
+    300: #BABBCC,
+    400: #A2A3BA,
+    500: $color-secondary,
+    600: #747698,
+    700: #5D5F87,
+    800: #454875,
+    900: #2F3165,
+    contrast: (50: $color-white,
+        100: $color-black,
+        200: $color-black,
+        300: $color-black,
+        400: $color-white,
+        500: $color-white,
+        600: $color-white,
+        700: $color-white,
+        800: $color-white,
+        900: $color-white,
+    )
+);
+
+$mat-warn: (
+    50: $color-warn,
+    100: #F8DBDA,
+    200: #F1B7B5,
+    300: #EA8F8C,
+    400: #E05F5A,
+    500: $color-warn,
+    600: #B52E29,
+    700: #932521,
+    800: #711D1A,
+    900: #4E1412,
+    contrast: (50: $color-white,
+        100: $color-black,
+        200: $color-black,
+        300: $color-black,
+        400: $color-white,
+        500: $color-white,
+        600: $color-white,
+        700: $color-white,
+        800: $color-white,
+        900: $color-white,
+    )
+);
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+
+$Usrati-primary: mat.define-palette($mat-primary, 500, 100, 200);
+$Usrati-accent: mat.define-palette($mat-secondary, 500, 100, 200);
+
+// The warn palette is optional (defaults to red).
+$Usrati-warn: mat.define-palette($mat-warn, 500, 100, 200);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$Usrati-theme: mat.define-light-theme((color: (primary: $Usrati-primary,
+                accent: $Usrati-accent,
+                warn: $Usrati-warn,
+            )));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($Usrati-theme);

@@ -1,0 +1,55 @@
+@import '../../assets/common/stylevariable.less';
+
+.pre-marital-screening-review-container {
+    .cards-container {
+        margin-top: 20px;
+
+        .card {
+            .header {
+                background-color: @color-table-bg;
+                color: @color-black;
+                font-weight: 600;
+            }
+
+            .card-body {
+                background: @gradient-1;
+            }
+
+            .details-holder {
+                .icon-holder {
+                    i {
+                        color: @color-dark-sand;
+                        font-size: 30px;
+                        width: 30px;
+                    }
+
+                    .email-icon {
+                        font-size: 24px;
+                        margin-right: 5px !important;
+                    }
+                }
+
+                .label-value-holder {
+                    margin: 0px 10px;
+
+                    .value {
+                        color: @color-grey-6;
+                    }
+                }
+            }
+
+            .total-fee {
+                color: @color-primary;
+                font-weight: bold;
+            }
+
+            .total-holder {
+                border-top: 1px solid @color-black;
+            }
+
+            .fee-holder {
+                padding: 20px;
+            }
+        }
+    }
+}

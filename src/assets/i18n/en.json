@@ -1,0 +1,834 @@
+{
+    "Homepage": {
+        "tracklbl": "Track Delivery",
+        "payment": "ADIB Payment Gateway"
+    },
+    "thanks": {
+        "timeanddatelbl": "Transaction Date",
+        "amountlbl": "Total Amount",
+        "receiptlbl": "Unique Reference Number(URN)"
+    },
+    "header": {
+        "appTitle": "USRATI",
+        "loginBtn": "Login",
+        "logout": "Logout",
+        "links": {
+            "home": "Home",
+            "about": "About Us"
+        },
+        "searchPlaceholder": "Type here to search"
+    },
+    "footer": {
+        "help": {
+            "title": "Help & Support",
+            "contactUs": "Contact Us",
+            "faq": "FAQs",
+            "sitemap": "Sitemap",
+            "userGuide": "User Guide"
+        },
+        "followUs": {
+            "title": "FOLLOW US"
+        },
+        "aboutWebiste": {
+            "title": "About this website",
+            "disclaimer": "Disclaimer",
+            "copyright": "Copyright",
+            "privacy": "Privacy Policy",
+            "tnc": "Terms and conditions"
+        },
+        "browserSupport": "This website is best supported on IE10+, Google Chrome 40+, Firefox 40+, Safari 7+",
+        "bestViewed": "Best viewed on 1366 x 768 screen resolution",
+        "copyright": "Copyright © 2023 USRATI.",
+        "allRights": "All rights reserved",
+        "collab": "collaboration with"
+    },
+    "home": {
+        "infostrip-header": "Important Notice",
+        "infostrip-text": "As part of continuously improving the services offered, We will be performing scheduled maintenance on 8th September 2024 between 1:00 AM to 6:00 AM. You might face some intermittent issues with the SMS related services durig this phase. We regret the inconvenience caused.",
+        "uaepasstext": "A single trusted digital identity for all citizens, residents and visitors",
+        "title": "USRATI is a bundle of services for the <br/> families of UAE nationals",
+        "services": {
+            "title": "Our Services",
+            "premarital": {
+                "title": "Premarital Screening",
+                "content": "Book your premarital screening appointment"
+            },
+            "marriageCertificate": {
+                "title": "Marriage Certificate",
+                "content": "View and Download your Marriage Certificate"
+            },
+            "familyBook": {
+                "title": "Family Data",
+                "content": "Apply for an electronic Family Data post your marriage"
+            },
+            "marriageGrant": {
+                "title": "Marriage Grant",
+                "content": "Apply for a Marriage Grant based on a certain eligibility criteria"
+            },
+            "massWedding": {
+                "title": "Mass Wedding",
+                "content": "Apply for Mass Wedding based on a certain eligibility criteria"
+            },
+            "housingGrant": {
+                "title": "Housing Assistance",
+                "content": "Apply for a Housing Assistance based on a certain eligibility criteria"
+            },
+            "housingAllowance": {
+                "title": "Housing Allowance",
+                "content": "Apply for a Housing Allowance based on a certain eligibility criteria"
+            },
+            "pregnancyCare": {
+                "title": "Pregnancy Care",
+                "content": "Rich content regarding various pregancy milestones and parental roles"
+            },
+            "mabroukMayak": {
+                "title": "Mabrouk Ma Yak",
+                "content": "Apply for all of your child's documents & get them delivered to your home"
+            },
+            "patLeaves": {
+                "title": "Paternity Leaves",
+                "content": "Apply for Paternity Leaves on your child's birth"
+            },
+            "matLeaves": {
+                "title": "Maternity Leaves",
+                "content": "Apply for Maternity Leaves on your child's birth"
+            },
+            "allowance": {
+                "title": "Child allowance",
+                "content": "Apply for Child Allowance on your child's birth"
+            },
+            "survey": {
+                "title": "Child Development Survey",
+                "content": "Check whether your child is meeting all development milestones or not by answering this simple survey"
+            },
+            "childCare": {
+                "title": "Child Care",
+                "content": "Check your child's vaccination history and vaccination plan"
+            },
+            "childEducation": {
+                "title": "Child Education",
+                "content": "A seat for your newborn will be reserved in government schools"
+            },
+            "libraryCard": {
+                "title": "Library Card",
+                "content": "Free for life public library membership for your child will be applied"
+            }
+        },
+        "aboutUs": {
+            "title": "About Us",
+            "books": {
+                "count": "75+",
+                "title": "family datas"
+            },
+            "housing": {
+                "count": "45+",
+                "title": "Housing Assistance"
+            },
+            "marriage": {
+                "count": "50+",
+                "title": "Marriage Grants"
+            },
+            "entities": {
+                "count": "30+",
+                "title": "Entities"
+            }
+        },
+        "partners": "Our Partners",
+        "people": {
+            "title": "What People Say!",
+            "person1": {
+                "name": "Amani",
+                "comment": "\"This is fantastic! Thanks so much guys!\""
+            },
+            "person2": {
+                "name": "Mohamed",
+                "comment": "\"USRATI is amazing. I've been using it to apply various services like familybook..\""
+            },
+            "person3": {
+                "name": "Fatima",
+                "comment": "\"Thanks so much for making useful application to us!!\""
+            }
+        }
+    },
+    "common": {
+        "proceed": "Proceed",
+        "close": "Close",
+        "cookiedisabledheader": "Cookies disabled error",
+        "cookiedisabledcontent": "Cookie seems to be disabled in your browser. In order to use USRATI service, kindly enable your cookies by changing browser's Preferences or Options.",
+        "welcome": "Welcome",
+        "pay": "Pay",
+        "download": "Download",
+        "back": "Back",
+        "videoRef": "Watch this video for your reference",
+        "considerTips": "Consider these tips",
+        "done": "Done",
+        "pending": "Pending",
+        "yes": "Yes",
+        "no": "No",
+        "notYet": "Not Yet",
+        "sometimes": "Sometimes",
+        "cancel": "Cancel",
+        "submit": "Submit",
+        "appStatus": "Application Status",
+        "thankYou": "Thank You!",
+        "nameEn": "Fullname (English)",
+        "nameAr": "Fullname (Arabic)",
+        "mobile": "Mobile number",
+        "email": "Email address",
+        "appId": "Application ID",
+        "URN": "Unique Reference Number",
+        "amount": "Amount",
+        "fullName": "Full Name",
+        "contactUs": "Contact Us",
+        "contactno": "Phone Number",
+        "comments": "Comments",
+        "send": "Send",
+        "mobile2": "Mobile",
+        "email2": "Email",
+        "faq": "Frequently Asked Questions",
+        "provideDetails": "Please provide the following details,",
+        "ok": "OK",
+        "thankyouInfo": "Your input have been successfully captured. We will apply for the same.",
+        "home": "Home",
+        "dashboard": "Dashboard",
+        "apply": "Apply",
+        "applyGrant": "Apply Grant",
+        "applyMassWedding": "Apply Mass Wedding",
+        "contactus": "Contact Us",
+        "referenceId": "Reference Number",
+        "agree": "Agree",
+        "checkElig": "Check Eligibility",
+        "checkingElig": "Checking eligibility...",
+        "retData": "Please wait for few seconds while the application data is being retrieved...",
+        "creatingApp": "Please wait for few seconds while the application data is being retrieved...",
+        "retFamDetails": "Retrieving Family Data details...",
+        "retPaymentDetails": "Retrieving payment details...",
+        "retFeeBreakup": "Retrieving fees breakup...",
+        "transDate": "Transaction Date",
+        "name": "Name",
+        "notIssued": "Not Issued",
+        "notElig": "Not Eligible",
+        "sendus": "Send us a Message",
+        "callusques": "Have a question or need some assistance? ",
+        "faqandguidetxt": "Please refer out <a href='./#/userguide' target='_blank' class='link-color'>User Guides</a> & <a href='./#/faq' target='_blank' class='link-color'>FAQs</a> for more information",
+        "callus": "You can also send us a message or feel free to call us on",
+        "errorname": "Please enter a valid name",
+        "erroremail": "Please enter a valid email",
+        "errormobile": "Please enter a valid contact",
+        "errorcomments": "Please enter a valid comment",
+        "errorIssue": "Please select an issue category",
+        "errorService": "Please select a service category",
+        "errorEmirate": "Please select an emirate",
+        "placeholdername": "Type your name here",
+        "comingSoon": "Coming soon...",
+        "viewAll": "View All",
+        "viewLess": "View Less",
+        "contactSuccess": "Your message has been sent successfully!",
+        "search": "Search",
+        "searchResults": "Search Results...",
+        "update": "Update",
+        "showing": "Showing",
+        "resultsfor": "search results for",
+        "noresults": "Sorry, there were no records found that match your search criteria",
+        "applyingMG": "Applying for Marriage Grant",
+        "applyingMW": "Applying for Mass Wedding",
+        "applyingHG": "Applying for housing assistance",
+        "loadingmsg": "loading",
+        "prev": "Previous",
+        "next": "Next",
+        "viewStatus": "View Status",
+        "submitted": "Submitted",
+        "completed": "Completed",
+        "inProcess": "In Progress",
+        "photoRejected": "Photo Rejected",
+        "new": "New",
+        "remarks": "Remarks",
+        "fillSurvey": "Fill Survey",
+        "attend": "Attend",
+        "edit": "Edit",
+        "paymentReceipt": "Payment Receipt",
+        "icp": "Federal Authority for Identity, Citizenship, Customs & Port Security (ICP)",
+        "mocd": "Ministry Of Community Development (MOCD)",
+        "szhp": "Sheikh Zayed Housing Program (SZHP)",
+        "shp": "Sharjah Housing Program (SHP)",
+        "moh": "Ministry Of Health and Prevention (MOH)",
+        "rak": "Ras Al-Khaimah Courts",
+        "ehs": "Emirates Health Services (EHS)",
+        "moj": "Ministry of Justice (MOJ)",
+        "viewDetails": "View Details",
+        "application": "application",
+        "applications": "applications",
+        "continueAppointment": "Continue Appointment Booking",
+        "reschedule": "Reschedule",
+        "rescheduleAppointment": "Reschedule Appointment",
+        "newAppointment": "Book a new appointment",
+        "bookAppointment": "Book Appointment",
+        "fujhr": "Fujairah Human Resource (FUJHR)",
+        "notsubmitted": "Not Submitted"
+    },
+    "inbox": {
+        "title": "Inbox",
+        "applyFamilyBook": "You can now apply for your new family data",
+        "familBookPay": "Please make a payment for your family data",
+        "marriage": "Congratulations on your marriage and you can download your marriage certificate",
+        "housingGrant": "You can now apply for your housing assistance",
+        "marriageGrant": "You can now apply for your Marriage Grant/Mass Wedding",
+        "updateFamilyBook": "You can now update your family data",
+        "noActionMsg": "There are no actions to be taken currently. Please go to dashboard to check the application status.",
+        "tnc": {
+            "title": "Terms and Conditions",
+            "heading1": "I am the applicant and I accept sharing of my following personal information between government entities to avail the USRATI services:",
+            "list": [
+                "Emirates ID Information",
+                "Marriage Certificate Information",
+                "Contact Information",
+                "Salary Information",
+                "Employment Information",
+                "Education Information",
+                "Family Data Number"
+            ],
+            "heading2": "I agree to provide correct and complete information wherever applicable to the best of my knowledge. ",
+            "heading3": "All information will be kept safe and confidential, and can only be accessed by those authorized and in accordance with the powers granted to them."
+        },
+        "nbbDocs2": "Congratulations for your new born. You can now apply for your child's documents",
+        "nbbDocs": "Warmest congratulations on the birth of your child. You can apply for all your child's documents here",
+        "photoReupload": "Your child's photo does not comply to the issued guidelines and has been rejected. Please re-upload the photo",
+        "devSurvey": "You can now fill the development survey for your baby",
+        "edaadNotification": "You can now attend the EDAAD program to receive your marriage grant.",
+        "all": "All",
+        "actions": "Actions",
+        "general": "General",
+        "filters": "Filters",
+        "housingAllowance": "You can now apply for Fujairah housing allowance",
+        "preMaritalScreening": "Are you planning to get married? Please book your premarital screening appointment.",
+        "preMaritalInProcess": "Please complete the appointment booking for your premarital screening",
+        "preMaritalReschedule": "You can now reschedule your premarital screening appointment if required",
+        "preMaritalDownload": "You can now download your premarital screening results",
+        "noNotificationMsg": "There are no notifications. Please click on the link below for more information",
+        "moreInfo": "more information"
+    },
+    "pregnancyCare": {
+        "title": "Pregnancy Care",
+        "banner": "Before you can take care of your new baby, you need to take care of yourself and your unborn child.",
+        "advice": "Here are some advises out there",
+        "disclaimer": "*Please note that this is the sample content displayed here, original content will be provided by Health Authorities*",
+        "nutrition": {
+            "title": "Nutrition",
+            "videoTitle": "Foods to eat while Pregnant",
+            "tips1": "Eat a variety of vegetables, fruits, whole grains, fat-free or low-fat dairy products and protein foods",
+            "tips2": "Choose foods and drinks with less added sugars, saturated fats, and sodium (salt).",
+            "tips3": "Limit refined grains and starches, which are in foods like cookies, white bread, and some snack foods"
+        },
+        "health": {
+            "title": "Health Tips",
+            "videoTitle": "Pregnancy care tips",
+            "tips1": "Take a prenatal vitamin.",
+            "tips2": "Exercise regularly.",
+            "tips3": "Write a birth plan.",
+            "tips4": "Educate yourself.",
+            "tips5": "Track your weight gain (normal weight gain is 25-35 pounds)"
+        },
+        "milestones": {
+            "title": "Milestones",
+            "videoTitle": "Milestones of Pregnancy",
+            "tips1": "The Positive Pregnancy Test.",
+            "tips2": "Morning Sickness.",
+            "tips3": "First Prenatal Appointment.",
+            "tips4": "Hearing Baby's Heart Beat.",
+            "tips5": "Wearing Maternity Clothes.",
+            "tips6": "Feeling the baby move"
+        },
+        "sleepPositions": {
+            "title": "Sleep positions",
+            "videoTitle": "Sleeping positions during pregnancy",
+            "tips1": "Favor your side. Avoid sleeping on your back, which can put the weight of your uterus on your spine and back muscles. But don't worry if you wake up on your back.",
+            "tips2": "Use pillows. Carefully placed pillows can help you get comfortable. Try placing a pillow between your bent knees or under your belly."
+        }
+    },
+    "childCare": {
+        "title": "Child Care",
+        "banner": "Good news! The Emirates School Establishment has received your new born baby details, they will be in touch with you when it is close to the registration time of the school year.",
+        "vaccinationSchedule": "Vaccination Schedule",
+        "childTips": "Child Care Tips",
+        "disclaimer": "*Please note that this is the sample content displayed here, original content will be provided by Health Authorities*",
+        "table": {
+            "immunization": "Immunization / Childhood",
+            "afterBirth": "After Birth",
+            "2months": "2 months",
+            "4months": "4 months",
+            "6months": "6 months",
+            "12months": "12 months",
+            "18months": "18 months",
+            "grade1": "Grade 1",
+            "grade9": "Grade 9",
+            "grade11": "Grade 11",
+            "bcg": "BCG",
+            "hepB": "Hep B",
+            "hib": "Hib",
+            "dtap": "Dtap / DPT / Tdap",
+            "opv": "OPV / IPV",
+            "pcv": "PCV",
+            "mmr": "MMR",
+            "varicella": "Varicella",
+            "rubella": "Rubella",
+            "hpv": "HPV"
+        },
+        "babySleep": "Baby sleep tips",
+        "bathe": "How to bathe a new born",
+        "colic": "Colic in babies"
+    },
+    "developmentSurvey": {
+        "title": "Development Survey",
+        "banner": "The UAE government has prepared surveys to assess the healthy progress of your child at diferent ages. Kindly note that only the surveys applicable to the age of your child will be displayed. The results are kept confidential and managed by Ministry of Community development.",
+        "info1": " Please select the baby's name to fill the survey for: ",
+        "info2": "The survey is being filled for baby:",
+        "info3": "There are currently no surveys available for your baby",
+        "babyName": "Baby's Name",
+        "surveyType": "Baby Development Survey",
+        "0-3months": "2 Month",
+        "3-5months": "4 Month",
+        "5-7months": "6 Month",
+        "7-9months": "8 Month",
+        "9-10months": "10 Month",
+        "10-12months": "12 Month",
+        "section": "Section",
+        "score": "Score",
+        "result": "Result",
+        "blackMsg": "Developmental Delays ",
+        "blackMsg2": "Please contact any of the below early intervention centers for further assessment of your child's development.",
+        "greyMsg": "Minor Developmental Delays ",
+        "greyMsg2": "Please contact any of the below early intervention centers to help enhance your child's development and keep it on track.",
+        "whiteMsg": "No Developmental delays ",
+        "whiteMsg2": "Your child's development is age appropriate. We will send you further surveys in future to help you track your child's progress.",
+        "resultInfo": "Your child development survey has been submitted successfully to the Minstry of Community Development.",
+        "2monthsComplete": "The 2 month baby development survey was completed on ",
+        "4monthsComplete": "The 4 month baby development survey was completed on ",
+        "6monthsComplete": "The 6 month baby development survey was completed on ",
+        "8monthsComplete": "The 8 month baby development survey was completed on ",
+        "10monthsComplete": "The 10 month baby development survey was completed on ",
+        "12monthsComplete": "The 12 month baby development survey was completed on ",
+        "noPastSurvey": "There are no completed surveys",
+        "interventionCenterList": "Early Intervention Center Information",
+        "fillQuestions": "Please answer all the questions to submit the survey",
+        "fillSectionQuestions": "Please answer all the questions to proceed to the next section",
+        "pendingSurvey": "Pending Surveys",
+        "completedSurvey": "Completed Surveys"
+    },
+    "familyBook": {
+        "paymentLabel": "Family Data Payment",
+        "infoTitle": "Family Data Details",
+        "information": "A family data is a civil registry that tracks information of your family tree. It will allow you to submit official requests, such as marriage and housing assistance applications.",
+        "familyDetails": "Family data details",
+        "marriageDetails": "Marriage Details",
+        "certificateNumber": "Marriage certificate number",
+        "maritalCertificateDate": "Marriage certificate date",
+        "marriageDate": "Marriage Date",
+        "marriageLocation": "Marriage emirate",
+        "thankyou": "Your application is submitted successfully for the Family Data.<br/> You will receive the SMS for the status.",
+        "feebreakup": "Fee Details",
+        "aed": "AED",
+        "total": "Total",
+        "incVat": "including card charges",
+        "notEligErr": "You are not eligible to apply for Family Data",
+        "familyNum": "Family Number",
+        "familyBookNum": "Family Data Number",
+        "familyReview": "Application Review",
+        "paymentDetails": "Payment Details",
+        "rejectedMessage": "Your application is rejected. Please contact our call center.",
+        "issuedStatus": "Issued",
+        "rejectedStatus": "Rejected",
+        "applyFamilyDataMsg": "Apply Family Data",
+        "updateFamilyDataMsg": "Update Family Data"
+    },
+    "marriageGrant": {
+        "title": "Marriage Grant",
+        "mgGrantMassWed": "Marriage Grant/Mass Wedding",
+        "salaryLabel": "Monthly Income (AED)",
+        "ibanLabel": "IBAN Number",
+        "bankLabel": "Bank Name",
+        "notEligErr": "You are not eligible to apply for Marriage Grant or Mass Wedding",
+        "info1": "The UAE Government can provide a grant to help cover the cost of a marriage to deserving Emiratis.",
+        "info2": "Know if you're eligible for a marriage grant by completing the form.",
+        "thankyou": "Your application submitted successfully for the Marriage Grant.<br/> You will receive the SMS for the status.",
+        "thankyouMassWedding": "Your application submitted successfully for the Mass Wedding.<br/> You will receive the SMS for the status.",
+        "edaadTitle": "Edaad Program:",
+        "edaadContent": "To qualify the newlyweds to marry, beneficiaries and non-beneficiaries from marriage grant or mass wedding and provide them with the necessary knowledge and skills to build a safe and stable family.",
+        "edaadContent2": "You are already registered for marriage grant or mass wedding. Attendance is compulsory for financial marriage grant recipients (husband and wife). You can attend directly without registration using the \"Attend Online\" button.",
+        "edaadBtn": "Attend Online",
+        "eligCrit": {
+            "check": "Check Eligibility",
+            "title": "Eligibility Criteria",
+            "info": "The given below are the required conditions for the husband to be eligible to apply for:",
+            "marriageGrant": {
+                "title": "Marriage Grant",
+                "condition1": "The husband's age should not be less than (21) twenty one Gregorian years, and the wife's age should be of (18) eighteen Gregorian years upon the conclusion of the marriage.",
+                "condition2": "His net monthly income does not exceed (25,000) twenty-five thousand dirhams, after deduction of the retirement allowance and housing allowance (if any).",
+                "condition3": "To submit the grant application within a period not exceeding six months from the date of the marriage contract.",
+                "condition4": "The applicant must not have benefited from the financial marriage grant at any time earlier, or benefited from any other grant in the country, or participated in any group wedding."
+            },
+            "massWeddingGrant": {
+                "title": "Mass Wedding",
+                "condition1": "The applicant and his wife shall be UAE citizens.",
+                "condition2": "The conditions and rules for obtaining the marriage grant shall not apply to the applicant.",
+                "condition3": "The applicant shall have not participated previously in a prior mass wedding.",
+                "condition4": "The husband shall not have (actually) married his wife yet at the time of mass wedding."
+            }
+        },
+        "incomeHint": "excluding retirement and housing allowance",
+        "salaryInput": "Please input your monthly income to check your eligibility",
+        "bankInput": "You are eligible! Please provide your bank details to credit the marriage grant in your account.",
+        "bankInputMassWedding": "You are eligible! Please provide your bank details to credit the mass wedding grant in your account.",
+        "checkboxLbl": "I confirm all the details provided are correct as per my information",
+        "ibanErr": "IBAN should have 21 digits",
+        "salElig": "Monthly income over <b>AED 25k</b> is not eligible",
+        "consentErr": "Please check the checkbox",
+        "husbandEdaadDate": "Husband Edaad Attended Date",
+        "wifeEdaadDate": "Wife Edaad Attended Date",
+        "applyMarriageGrantMsg": "Apply Marriage Grant"
+    },
+    "housingGrant": {
+        "title": "Housing Assistance",
+        "aidTypeLabel": "Select Aid Type",
+        "salaryLabel": "Monthly Salary (AED)",
+        "buildHouseLabel": "Build a new house",
+        "buyHouseLabel": "Buy a new house",
+        "tooltip": "These are required to apply for housing assistance",
+        "thankyou": "Your application submitted successfully for the Housing Assistance.<br/> You will receive the SMS for the status.",
+        "notEligErr": "You are not eligible to apply Housing Assistance application",
+        "hgDetails": "Housing Assistance Details",
+        "information": "Please check your Housing Assistance Details",
+        "husbandEId": "Husband Emirates ID",
+        "wifeEId": "Wife Emirates ID",
+        "appStatus": "Application Status",
+        "useOfAid": "Aid Type",
+        "refId": "Reference ID",
+        "salElig": "Monthly salary over <b>AED 100k</b> is not eligible",
+        "intro": "The UAE Government allocates land or provides free housing or housing loan, residential facilities and maintenance to deserving Emiratis.",
+        "intro2": "Know if you're eligible for a housing assistance by completing the form.",
+        "applyInfo": "By clicking 'Apply', your application will be automatically sent if eligible.",
+        "salaryPlaceholder": "Enter between 0k - 100k",
+        "eligSuccessMsg": "You are eligible! Please provide the following details to apply for housing assistance.",
+        "applyHousingGrantMsg": "Apply Housing Grant"
+    },
+    "housingallowance": {
+        "title": "Housing Allowance",
+        "intro": "The Fujairah Government allocates land or provides free allowance, residential facilities and maintenance to deserving Emiratis.",
+        "husbandWorking": "Is Husband working?",
+        "selectEmirate": "Select Emirate",
+        "selectRegion": "Select Region",
+        "otherRegion": "Other Region Name",
+        "selectWorkplace": "Select Work Place",
+        "husbandSalary": "Husband Basic Salary",
+        "otherOption": "Other",
+        "husbandReceiveAllowance": "Is Husband receving housing allowance already?",
+        "yesOption": "Yes",
+        "noOption": "No",
+        "wifeWorking": "Is Wife working?",
+        "wifeSalary": "Wife Basic Salary",
+        "wifeReceiveAllowance": "Is Wife receving housing allowance already?",
+        "publicOption": "Government",
+        "privateOption": "Private",
+        "checkEligibility": "Check Eligibility",
+        "applyHousingAllowance": "Apply",
+        "notEligErr": "You are not eligible to apply for Housing Allowance application",
+        "eligibleMessage1": "You are eligible to apply for Housing Allowance application",
+        "eligibleMessage2": "Please provide additional details to further verification.",
+        "eligibleMessage3": "Please click the Apply button to proceed.",
+        "thankyou": "Your application submitted successfully for the Housing Allowance.<br/> You will receive the SMS for the status.",
+        "selectWorkPlace": "Please select a workplace",
+        "selectWorkEmirate": "Please select an Emirate",
+        "selectWorkRegion": "Please select a city",
+        "selectOtherRegion": "Please enter other city name",
+        "enterBasicSalary": "Please enter basic salary",
+        "applyHousingAllowanceMsg": "Apply Housing Allowance",
+        "husbandEId": "Husband Emirates ID",
+        "wifeEId": "Wife Emirates ID",
+        "appStatus": "Application Status",
+        "refId": "Reference ID"
+    },
+    "privacy": {
+        "title": "Privacy Policy",
+        "list": [
+            {
+                "parent": "The TDRA is committed to protecting the privacy and personal information of its website users through the following:",
+                "children": [
+                    "Any personal information collected through use of the TDRA Website will be treated with the highest standards of security and confidentiality.",
+                    "The TDRA will take precautions to prevent the loss, misuse or alteration of personal information, including storing personal information on a secure database."
+                ]
+            },
+            {
+                "parent": "The TDRA may collect, store, and use the following kinds of personal data:",
+                "children": [
+                    "Information about website user's computers and about their visits to and use of the TDRA Website (including IP address, geographical location, browser type, length of visit and number of page views); and information voluntarily provided to the TDRA through use of the TDRA Website."
+                ]
+            },
+            {
+                "parent": "The TDRA uses Google Analytics, which generates statistical information about website use, using cookies which are stored on user's computers. Google stores this information, and its privacy policy can be viewed at <a href='http://www.google.com/privacypolicy.html'>http://www.google.com/privacypolicy.html</a>."
+            },
+            {
+                "parent": "The TDRA may use website user's personal information to:",
+                "children": [
+                    "Send email notifications, announcements, information or other marketing communications; and",
+                    "Communicate and follow up about enquiries, suggestions and complaints."
+                ]
+            },
+            {
+                "parent": "The TDRA will not disclose personal information to third parties, except as provided below:",
+                "children": [
+                    "When required to do so by law; and",
+                    "In connection with any legal proceedings."
+                ]
+            }
+        ]
+    },
+    "tnc": {
+        "title": "Terms & Conditions",
+        "general": {
+            "title": "General",
+            "heading1": "Using the services and information provided by this website, you agree to abide to the terms and conditions (T&C) stated herein. You may discontinue using this service in case you do not approve the stated T&C. This site does not save the user’s personal data, unless otherwise stated by the user. Should the user provide any data related thereto, it shall only be used to support him/her with the requested information, services or for his/ her participation in the website. By using this website, the user accepts the terms of the Privacy Policy. The site further uses and avails the information provided by other government entities which participate in the service provision, either through this website or through their respective websites. The website management shall not be responsible for the accuracy of such information as it shall be furnished on the website as received."
+        },
+        "personalData": {
+            "title": "Personal Data",
+            "content": "Your personal data shall be availed only to the competent parties, it shall not be publicly available without obtaining your consent. Furthermore, such data shall not be exchanged, traded or sold to any third party without your prior consent. Only competent and professional personnel responsible for providing services through this site will have access to the data referred to herein. This site does not provide warranties and the UAE Government shall not be responsible for the safety of uploading or downloading any information or services through this website. Information and services shall be furnished as provided on the site and for the purposes highlighted therein. Right to amend: Without prior notice, the UAE Government shall have the right to change or amend the Privacy Policy and the Terms and Conditions from time to time. If you wish to continue using this site, it is implied that you accept these Terms and Conditions, Privacy Policy and any subsequent amendments thereto."
+        },
+        "security": {
+            "title": "Security Measures",
+            "content1": "This site includes security measures to avoid any losses, misuse and change of information. The UAE Government is not responsible for any damage to the browser, user or any other person who may suffer from this due to breach of confidentiality policy in relation to the information provided to the site by the browser or user."
+        },
+        "applicableLaws": {
+            "title": "Applicable Laws",
+            "content": "All procedures related to or arising from this site shall be subject to the applicable laws of the United Arab Emirates. Should any disputes, claims and legal proceedings arise out of or in connection to this site, they shall be subject to the exclusive jurisdiction of the courts of the United Arab Emirates."
+        }
+    },
+    "disclaimer": {
+        "title": "Disclaimer",
+        "list": [
+            "This website provides comprehensive information about the Telecommunications and Digital Government Regulatory Authority (TDRA) of the United Arab Emirates, including but not limited to texts, documents, graphics and others. Although the website consists of links to information published on external websites, TDRA does not guarantee the accuracy of the published information, as well as its warranties and conditions, since it is the responsibility of the concerned websites. Moreover, all information available on TDRA’s website is published as received from the concerned sources.",
+            "The Published Information may be amended or deleted without notice.",
+            "The electronic versions of TDRA documents published on this website are for information purposes only. The definitive version of any TDRA document is the original printed version held by TDRA. If the document has been signed by an authorized person, the definitive version is the original printed and signed version held by TDRA. In the case of any difference between documents, the version so held by TDRA shall take precedence over any other version.",
+            "Information contained in this website may have been published in both English and in Arabic versions. Where there are any differences between the two language versions of the same information, the definitive version shall be the language version in which the information was originally issued.",
+            "TDRA shall not be liable for any loss or damage whatsoever and howsoever arising, directly or indirectly, from the Published Information or from use of this website."
+        ]
+    },
+    "copyrights": {
+        "title": "Copyrights",
+        "content": "The content of this website including, but not limited to, the text, graphics, images, files, links, and sounds are the property of the TDRA and are protected by copyright. The TDRA reserves all copyright, trademark, patent, intellectual and other property rights of the information contained in this website. Any unauthorised use, reproduction or printing of the information, materials and proprietary rights contained in this website is strictly prohibited."
+    },
+    "contactus": {
+        "title": "Contact Us",
+        "contentTitle": "How can we help you?",
+        "name": "Name",
+        "email": "Email",
+        "textarea": "Please let us know your remarks",
+        "file": "Please upload supporting documents",
+        "issueCategory": "Issue Category",
+        "serviceCategory": "Service Category",
+        "emirate": "Emirate"
+    },
+    "about": {
+        "title": "About USRATI",
+        "paragraph1": "Usrati is a proactive government program affiliated with the Federal Authority for Identity, Citizenship, Customs, and Port Security. It was developed by the Telecommunications and Digital Government Regulatory Authority in collaboration with various federal and local entities. This first-of-its-kind initiative aims to provide a wide range of family services proactively, supporting sound education and ensuring family needs are met.",
+        "paragraph2a": "In its current phase, the Usrati package offers citizens a range of proactive services reflecting the true concept of quality of life. These services are provided without request and include:",
+        "paragraph2b": [
+            "Documenting marriage contracts",
+            "Issuing or updating family data",
+            "Marriage grants",
+            "Salary, land, and property data",
+            "Housing support",
+            "Pregnancy and medical review appointments",
+            "Vaccination appointments",
+            "School seat reservations"
+        ],
+        "paragraph3": "This package underscores the Authority’s commitment to swiftly responding to the wise leadership’s directives to develop and provide services proactively without request, thereby enhancing citizens’ happiness and improving their quality of life. It embodies the principles of the UAE Government’s Future Services Promise and aligns with the strategic vision for government services in the UAE. Additionally, it supports the goals of UAE Vision 2031 and the UAE Centennial 2071, boosting the country’s leadership and competitiveness in government services both regionally and globally.",
+        "content1": "USRATI is the proactive government services platform owned by Federal Authority for Identity, Citizenship, Customs & Ports Security (ICP) and developed by Telecommunications And Digital Government Regulatory Authority (TDRA) in coordination with different Federal and Local Government entities. It is a first of its kind service in the world which aims to provide bundled family services in a proactive manner in order to facilitate the establishment of their families, supports sound education and guarantees the family's needs."
+    },
+    "partners": {
+        "title": "Partners",
+        "contentTitle": "Entities participate to bring the USRATI service to you",
+        "fed": "Federal Government Partners",
+        "local": "Local Government Partners",
+        "fedGov": "Federal Government",
+        "localGov": "Local Government",
+        "medical": "Medical Sector",
+        "medicalPartners": "Medical Sector Partners",
+        "all": "All Partners",
+        "auh": "Abu Dhabi",
+        "dxb": "Dubai"
+    },
+    "sitemap": {
+        "title": "Sitemap",
+        "explore": "Explore Services",
+        "inbox": "Inbox",
+        "dashboard": "Dashboard",
+        "familyBook": "Family Data",
+        "marriageDetails": "Marriage Details",
+        "marriageGrant": "Marriage Grant",
+        "housingGrant": "Housing Assistance",
+        "contactUs": "Contact Us",
+        "faq": "FAQs",
+        "home": "Home",
+        "aboutUs": "About Us"
+    },
+    "marriageDetails": {
+        "title": "Marriage Details",
+        "details": "Marriage Details",
+        "certificateNum": "Marriage Certificate Number",
+        "certificateDate": "Marriage Certificate Date",
+        "marriageDate": "Marriage Date",
+        "husbandEId": "Husband Emirates ID",
+        "wifeEId": "Wife Emirates ID",
+        "appStatus": "Application Status",
+        "docStatus": "Document Status"
+    },
+    "errors": {
+        "title": "Error",
+        "defaultCurrentErrorMsg": "Internal System Error",
+        "defaultHeaderMsg": "System Error",
+        "systemerror": "System Error",
+        "issue": "There seems to be an issue. Please try again after some time",
+        "inquirylbl": "In case of any inquiry, Please contact the Call Center Number",
+        "callcenterlbl": "Call Center",
+        "authHeaderMsg": "Login was unsuccessful!",
+        "authCurrentErrorMsg": "Please try again",
+        "paymentHeaderMsg": "Payment Failed!",
+        "paymentErrorMsg": "Payment failed. Please try again",
+        "unverifiedHeaderMsg": "Authorization Error!",
+        "unverifiedCurrentErrorMsg": "You are not eligible to access this service. Your account is either not upgraded or you have a visitor account. Please contact Federal Authority for Identity, Citizenship, Customs and Port Security to access the services.",
+        "usercancelloginmsg": "User cancelled the login",
+        "loginfailedHeader": "Login Failed",
+        "loginfailedmsg": "Something went wrong during the login, please try again later!",
+        "alreadysubmittedErrorMsg": "Payment for your application is successful. Application submission is in process. Please check after some time."
+    },
+    "dashboard": {
+        "marriageCertificateFailed": "There seems to be an issue with downloading Marriage Certificate. Please try again after sometime.",
+        "marriageDetails": "Marriage Details",
+        "familyBook": "Family Data",
+        "marriageGrant": "Marriage Grant",
+        "housingGrant": "Housing Assistance",
+        "pregnancyCare": "Pregnancy Care",
+        "mabroukMayak": "Mabrouk Ma Yak",
+        "childCare": "Child Care",
+        "developmentSurvey": "Development Survey",
+        "icp": "ICP",
+        "mocd": "MOCD",
+        "szhp": "SZHP",
+        "moh": "MOH",
+        "rak": "RAK Courts",
+        "ehs": "EHS",
+        "moj": "MOJ",
+        "shp": "SHP",
+        "housingauthority": "Housing Authority",
+        "terms": {
+            "content1": "Terms and Conditions",
+            "content2": "I am the applicant and I accept any error resulting from the introduction of my details in this portal. I accept sharing of my following personal information between government entities to avail the service:"
+        },
+        "cardsDescription": "Click on the card to apply for a service or view the status of your application.",
+        "housingAllowance": "Housing Allowance",
+        "fujHr": "FUJ-HR"
+    },
+    "infopage": {
+        "title": "Information",
+        "noApp": "Kindly note that there are no active application(s) found",
+        "greetlbl": "Dear",
+        "line1lbl": "There are no applications currently available for you in USRATI.",
+        "line2lbl": "This might be due to any of the following reasons:",
+        "line2-pt1lbl": "The marriage is not recently registered in the court.",
+        "line2-pt2lbl": "The marriage is registered recently in the court but the court or marriage registering entity is not registered with USRATI. Please check ",
+        "line2-pt2albl": "FAQs",
+        "line2-pt2blbl": " for the list of registered entities.",
+        "line2-pt3lbl": "If the court is registered with USRATI, there could be a delay in sending the marriage notification from the entity. Please check with the court or try again after sometime.",
+        "line2-pt4lbl": "The married couple is not eligible to apply for USRATI. Please check ",
+        "line2-pt4albl": "FAQs",
+        "line2-pt4blbl": " to know more about the eligiblity to apply for USRATI bundle.",
+        "line3lbl": "Please feel free to contact our call center for more queries."
+    },
+    "userGuide": {
+        "title": "User Guide",
+        "desc": "Click the card to access the user's guide for a specific service.",
+        "marriageGrant": "Marriage Grant/Mass Wedding"
+    },
+    "nbb": {
+        "title": "Mabrouk Ma Yak",
+        "fatherEid": "Father Emirates ID",
+        "motherEid": "Mother Emirates ID",
+        "babyDob": "Baby Date of Birth",
+        "babyNameEn": "Baby Name English",
+        "babyNameAr": "Baby Name Arabic",
+        "appStatus": "Application Status",
+        "babyNameEnAr": "Baby Name in Arabic/English",
+        "parentsInformation": "Parents Information",
+        "father": "Father",
+        "mother": "Mother"
+    },
+    "preMarital": {
+        "title": "Premarital Screening",
+        "step1": {
+            "title": "Medical History",
+            "q1": "Is it your first marriage?",
+            "q2": "Any consanguinity?",
+            "q3": "Did you receive a blood transfusion in the last 3 months?",
+            "q4": "Do you have Hepatitis B or C?",
+            "q5": "Do you have HIV?",
+            "q6": "Do you have inherited blood diseases (Thalassemia, sickle cell anemia)?",
+            "q7": "Is there any history of genetic diseases in your family?",
+            "fillSectionQuestions": "Please answer all the questions to proceed to the next section"
+        },
+        "step2": {
+            "title": "Partner Details",
+            "partnerEmiratesId": "Partner's Emirates ID",
+            "emiratesId": "Emirates ID",
+            "name": "Name",
+            "emailId": "Email ID",
+            "mobile": "Mobile Number",
+            "eidError": "Please enter your partner's emirates ID",
+            "enterPartnerDetails": "Please enter partner details to proceed to the next section",
+            "searchFailed": "An error occurred while searching the partner details. Please try again.",
+            "partnerExists": "An application already exists with this partner's emirates ID.",
+            "userIdNotAllowed": "You have entered your emirates ID. Please enter your partner's emirates ID.",
+            "clickSearch": "Please click on search icon to retrieve your partner's details.",
+            "chooseOption": "Please choose an option"
+        },
+        "step3": {
+            "title": "Book Appointment",
+            "appointmentDetails": "Appointment Details",
+            "emirate": "Emirate",
+            "healthCenter": "Health Center",
+            "doctor": "Doctor",
+            "dateTime": "Date & Time",
+            "date": "Date",
+            "time": "time",
+            "timeSlotLabel": "Please select a suitable time slot:",
+            "showFlexibleDays": "show appointments for +2 days",
+            "partnerLabel": "Partner's Appointment Details:",
+            "userLabel": "Please fill your appointment details:",
+            "fillDetailsError": "Please fill all the fields to book your appointment",
+            "noTimeSlotsAvailable": "There are no time slots available for the selected Date. Please choose a different date to select the time slot."
+        },
+        "consent": {
+            "title": "Consent Declaration",
+            "consent1": "Your appointment information and test results will be shared with your partner.",
+            "consent2": "I agree to share my certificate with MOJ.",
+            "consent3": "I agree that this test will not guarantee my ability to have children.",
+            "consent4": "No refund after submission of the request.",
+            "consent5": "The certificate for use in UAE only.",
+            "consent6": "This certificate is valid for 3 months from the date of blood collection."
+        },
+        "review": "Premarital Screening Review",
+        "selectCheckbox": "You must agree to this term to proceed to payment.",
+        "thankyou": "Your payment is successful. Please find below the details of your appointment.",
+        "thankyou2": "We will send you a SMS once the appointment is confirmed.",
+        "appointmentDateTime": "Appointment Date & Time",
+        "saveFailed": "An error occurred while saving the details. Please try again.",
+        "downloadFailed": "An error occurred while downloading premarital screening result. Please try again.",
+        "errorHealthCenter": "Please select a health center",
+        "errorDoctor": "Please select a doctor",
+        "errorDate": "Please select a Date",
+        "errorTime": "Please select a time slot",
+        "feebreakup": "Fee Details",
+        "rescheduleSuccess": "Your appointment has been rescheduled successfully",
+        "checkboxError": "Please select the checkbox to proceed to payment",
+        "rescheduleNotAllowedMsg": "This appointment cannot be rescheduled. Please book a new appointment.",
+        "ehsRefId": "Appointment Reference ID",
+        "feeDesc": "Fee for Pre-marital examination for citizens"
+    }
+}

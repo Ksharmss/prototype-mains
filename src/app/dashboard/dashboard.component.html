@@ -1,0 +1,62 @@
+<div class="design-dashboard-container">
+    <app-header-banner pageTitle="{{'common.dashboard' | translate}}"></app-header-banner>
+    <div class="container">
+        <div [dir]="currentLang == 'en'? 'ltr':'rtl'" class="card-and-text-container">
+            <div class="cards-description-container mt-0 mb-2 pt-3 px-3">
+                <h5>{{'dashboard.cardsDescription' | translate}}</h5>
+            </div>
+            <div class="d-flex align-items-start">
+                <div class="cards-container mt-3 row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <div class="col" *ngFor="let card of cards; let i= index">
+                        <div
+                            class="d-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center">
+                            <div [ngClass]="{
+                                'new-card-pending': !card.isEnabaled,
+                                'new-card-ar': currentLang == 'ar'
+                            }" class="new-card" (click)="viewDetails(card)">
+                                <div class="new-card-content">
+                                    <div class="icon-holder">
+                                        <i [ngClass]="card.docIcon"></i>
+                                    </div>
+                                    <div class="title">
+                                        {{card.header | translate}}
+                                    </div>
+                                    <div class="content fw-bold">
+                                        <div class="entity-container d-flex">
+                                            <div class="entity-icon">
+                                                <i class="fa-solid fa-building-columns entity-icon-i"></i>
+                                            </div>
+                                            <div class="entity-text">
+                                                <div *ngIf="card.entity" class="entity" [translate]="card.entity"></div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="app-id-container d-flex">
+                                            <div class="app-id-icon">
+                                                <i class="bi bi-card-text app-id-icon-i"></i>
+                                            </div>
+                                            <div *ngIf="card.isEnabaled && card.count > 0" class="app-id-text">
+                                                <span>{{card.count}} </span>
+                                                <span *ngIf="card.count == 1">{{'common.application' |
+                                                    translate}}</span>
+                                                <span *ngIf="card.count > 1">{{'common.applications' |
+                                                    translate}}</span>
+                                            </div>
+                                            <div *ngIf="card.count == 0" class="app-id-text">
+                                                0 {{'common.application' | translate}}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div [ngClass]="card.isEnabaled ? 'card-highlighter-active': 'card-highlighter-pending'"
+                                    class="status-container">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

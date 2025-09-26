@@ -1,0 +1,307 @@
+<div class="pre-marital-screening-container">
+    <app-header-banner pageTitle="{{'preMarital.title' | translate}}"></app-header-banner>
+    <div [dir]="currentLang == 'en' ? 'ltr': 'rtl'" class="container">
+        <div class="steps-holder">
+            <mat-vertical-stepper linear #stepper>
+                <mat-step [completed]="isStep1Completed" [editable]="isStep1Editable">
+                    <ng-template matStepLabel>
+                        {{'preMarital.step1.title' | translate}}
+                    </ng-template>
+                    <div class="step-container">
+                        <form [formGroup]="medicalForm">
+                            <div [dir]="currentLang == 'en' ? 'ltr': 'rtl'" class="mb-3 questions-container">
+                                <div class="question-holder">
+                                    <div id="question_0" class="question text-secondary-500">
+                                        {{1}}. {{'preMarital.step1.q1' | translate}}
+                                    </div>
+                                    <div class="form-check">
+                                        <mat-radio-group id="question_0" formControlName="question1">
+                                            <mat-radio-button value="Y">{{'common.yes' | translate}}</mat-radio-button>
+                                            <mat-radio-button value="N">{{'common.no' | translate}}</mat-radio-button>
+                                        </mat-radio-group>
+                                    </div>
+                                </div>
+                                <div class="question-holder">
+                                    <div id="question_1" class="question text-secondary-500">
+                                        {{2}}. {{'preMarital.step1.q2' | translate}}
+                                    </div>
+                                    <div class="form-check">
+                                        <mat-radio-group id="question_1" formControlName="question2">
+                                            <mat-radio-button value="Y">{{'common.yes' | translate}}</mat-radio-button>
+                                            <mat-radio-button value="N">{{'common.no' | translate}}</mat-radio-button>
+                                        </mat-radio-group>
+                                    </div>
+                                </div>
+                                <div class="question-holder">
+                                    <div id="question_2" class="question text-secondary-500">
+                                        {{3}}. {{'preMarital.step1.q3' | translate}}
+                                    </div>
+                                    <div class="form-check">
+                                        <mat-radio-group id="question_2" formControlName="question3">
+                                            <mat-radio-button value="Y">{{'common.yes' | translate}}</mat-radio-button>
+                                            <mat-radio-button value="N">{{'common.no' | translate}}</mat-radio-button>
+                                        </mat-radio-group>
+                                    </div>
+                                </div>
+                                <div class="question-holder">
+                                    <div id="question_3" class="question text-secondary-500">
+                                        {{4}}. {{'preMarital.step1.q4' | translate}}
+                                    </div>
+                                    <div class="form-check">
+                                        <mat-radio-group id="question_3" formControlName="question4">
+                                            <mat-radio-button value="Y">{{'common.yes' | translate}}</mat-radio-button>
+                                            <mat-radio-button value="N">{{'common.no' | translate}}</mat-radio-button>
+                                        </mat-radio-group>
+                                    </div>
+                                </div>
+                                <div class="question-holder">
+                                    <div id="question_4" class="question text-secondary-500">
+                                        {{5}}. {{'preMarital.step1.q5' | translate}}
+                                    </div>
+                                    <div class="form-check">
+                                        <mat-radio-group id="question_4" formControlName="question5">
+                                            <mat-radio-button value="Y">{{'common.yes' | translate}}</mat-radio-button>
+                                            <mat-radio-button value="N">{{'common.no' | translate}}</mat-radio-button>
+                                        </mat-radio-group>
+                                    </div>
+                                </div>
+                                <div class="question-holder">
+                                    <div id="question_5" class="question text-secondary-500">
+                                        {{6}}. {{'preMarital.step1.q6' | translate}}
+                                    </div>
+                                    <div class="form-check">
+                                        <mat-radio-group id="question_5" formControlName="question6">
+                                            <mat-radio-button value="Y">{{'common.yes' | translate}}</mat-radio-button>
+                                            <mat-radio-button value="N">{{'common.no' | translate}}</mat-radio-button>
+                                        </mat-radio-group>
+                                    </div>
+                                </div>
+                                <div class="question-holder">
+                                    <div id="question_6" class="question text-secondary-500">
+                                        {{7}}. {{'preMarital.step1.q7' | translate}}
+                                    </div>
+                                    <div class="form-check">
+                                        <mat-radio-group id="question_6" formControlName="question7">
+                                            <mat-radio-button value="Y">{{'common.yes' | translate}}</mat-radio-button>
+                                            <mat-radio-button value="N">{{'common.no' | translate}}</mat-radio-button>
+                                        </mat-radio-group>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="d-flex justify-content-center mt-4">
+                            <button class="mx-4" mat-stroked-button>{{'common.back' | translate}}</button>
+                            <button (click)="nextStep(1)" class="bg-primary-1000 color-white me-4"
+                                mat-flat-button>{{'common.next' | translate}}</button>
+                        </div>
+                    </div>
+                </mat-step>
+                <mat-step [completed]="isStep2Completed" [editable]="isStep2Editable">
+                    <ng-template matStepLabel>
+                        {{'preMarital.step2.title' | translate}}
+                    </ng-template>
+                    <div class="step-container">
+                        <form [formGroup]="partnerDetailsForm">
+                            <div class="d-flex flex-column flex-smcolumn flex-md-row flex-lg-row">
+                                <div class="partner-details-container mx-2 col-12 col-sm-12 col-md-4 col-lg-4">
+                                    <mat-form-field appearance="outline" class="width100percent">
+                                        <mat-label>{{'preMarital.step2.partnerEmiratesId' | translate}}</mat-label>
+                                        <input type="text" matInput formControlName="emiratesId">
+                                        <button (click)="searchEmiratesId()" mat-flat-button matSuffix
+                                            class="search-button bg-primary-1000 color-white">
+                                            <mat-icon>search</mat-icon>
+                                        </button>
+                                    </mat-form-field>
+                                </div>
+                                <div *ngIf="showPartnerDetailsInStep2"
+                                    class="d-flex col-12 col-sm-12 col-md-7 col-lg-7">
+                                    <mat-form-field appearance="outline" class="width100percent">
+                                        <mat-label>{{'preMarital.step2.name' | translate}}</mat-label>
+                                        <input type="text" matInput readonly formControlName="name">
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                            <div *ngIf="showPartnerDetailsInStep2" class="question-holder">
+                                <div class="d-flex">
+                                    <div>
+                                        <i class="bi bi-info-circle"></i>
+                                    </div>
+                                    <div class="mx-2">
+                                        {{'preMarital.consent.consent1' | translate}}
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="d-flex justify-content-center mt-4">
+                            <button mat-flat-button (click)="previousStep(2)" class="bg-primary-1000 color-white"
+                                [ngClass]="currentLang == 'en' ? 'me-4': 'ms-4'">
+                                {{'common.prev' | translate}}
+                            </button>
+                            <button mat-flat-button (click)="nextStep(2)" class="bg-primary-1000 color-white"
+                                [ngClass]="currentLang == 'en' ? 'me-4': 'ms-4'">
+                                {{'common.next' | translate}}
+                            </button>
+                        </div>
+                    </div>
+                </mat-step>
+                <mat-step [completed]="isStep3Completed" [editable]="isStep3Editable">
+                    <ng-template matStepLabel>
+                        {{'preMarital.step3.title' | translate}}
+                    </ng-template>
+                    <div class="step-container">
+                        <div class="partner-appointment-container">
+                            <div class="partner-label bg-primary-1000 color-white">
+                                {{'preMarital.step3.partnerLabel' | translate}}
+                            </div>
+                            <div class="d-flex row row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+                                <div>
+                                    <mat-form-field appearance="outline" class="width100percent disabled-form-field">
+                                        <mat-label class="fw-bold">{{'preMarital.step2.name' | translate}}</mat-label>
+                                        <input type="text" matInput readonly
+                                            [value]="currentLang == 'en' ? partnerDetails.partnerFullNameEn: partnerDetails.partnerFullNameAr">
+                                    </mat-form-field>
+                                </div>
+                                <div>
+                                    <mat-form-field appearance="outline" class="width100percent disabled-form-field">
+                                        <mat-label class="fw-bold">{{'preMarital.step3.emirate' |
+                                            translate}}</mat-label>
+                                        <input type="text" matInput readonly
+                                            [value]="currentLang == 'en' ? partnerDetails.emirateEn: partnerDetails.emirateAr">
+                                    </mat-form-field>
+                                </div>
+                                <div>
+                                    <mat-form-field appearance="outline" class="width100percent disabled-form-field">
+                                        <mat-label class="fw-bold">{{'preMarital.step3.healthCenter' |
+                                            translate}}</mat-label>
+                                        <input type="text" matInput readonly
+                                            [value]="currentLang == 'en' ? partnerDetails.healthCenterEn: partnerDetails.healthCenterAr">
+                                    </mat-form-field>
+                                </div>
+                                <div>
+                                    <mat-form-field appearance="outline" class="width100percent disabled-form-field">
+                                        <mat-label class="fw-bold">{{'preMarital.step3.doctor' | translate}}</mat-label>
+                                        <input type="text" matInput readonly
+                                            [value]="currentLang == 'en' ? partnerDetails.doctorEn: partnerDetails.doctorAr">
+                                    </mat-form-field>
+                                </div>
+                                <div>
+                                    <mat-form-field appearance="outline" class="width100percent disabled-form-field">
+                                        <mat-label class="fw-bold">{{'preMarital.step3.dateTime' |
+                                            translate}}</mat-label>
+                                        <input type="text" matInput readonly [value]="partnerDetails.dateTime">
+                                    </mat-form-field>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-appointment-container">
+                            <div class="fs22 user-label text-primary-1000 fw-bold mb-2">
+                                {{'preMarital.step3.userLabel' | translate}}
+                            </div>
+                            <div class="form-container">
+                                <form [formGroup]="userAppointmentForm">
+                                    <div class="d-flex row row-cols-sm-1 row-cols-md-2 row-cols-lg-4">
+                                        <div>
+                                            <mat-form-field appearance="outline" class="width100percent">
+                                                <mat-label>{{'preMarital.step3.emirate' | translate}}</mat-label>
+                                                <mat-select name="emirate" required formControlName="emirate"
+                                                    (selectionChange)="onEmirateChange($event)">
+                                                    <mat-option [value]="emirate" *ngFor="let emirate of emiratesList">
+                                                        <ng-container *ngIf="currentLang == 'en'">
+                                                            {{emirate.emirateNameEn}}
+                                                        </ng-container>
+                                                        <ng-container *ngIf="currentLang == 'ar'">
+                                                            {{emirate.emirateNameAr}}
+                                                        </ng-container>
+                                                    </mat-option>
+                                                </mat-select>
+                                            </mat-form-field>
+                                        </div>
+                                        <div>
+                                            <mat-form-field appearance="outline" class="width100percent">
+                                                <mat-label>{{'preMarital.step3.healthCenter' | translate}}</mat-label>
+                                                <mat-select name="healthCenter" required formControlName="healthCenter"
+                                                    (selectionChange)="onHealthCenterChange($event)">
+                                                    <mat-option [value]="center"
+                                                        *ngFor="let center of displayHealthCenterList">
+                                                        <ng-container *ngIf="currentLang == 'en'">
+                                                            {{center.healthCenterEn}}
+                                                        </ng-container>
+                                                        <ng-container *ngIf="currentLang == 'ar'">
+                                                            {{center.healthCenterAr}}
+                                                        </ng-container>
+                                                    </mat-option>
+                                                </mat-select>
+                                            </mat-form-field>
+                                        </div>
+                                        <div>
+                                            <mat-form-field appearance="outline" class="width100percent">
+                                                <mat-label>{{'preMarital.step3.doctor' | translate}}</mat-label>
+                                                <mat-select name="doctor" required formControlName="doctor"
+                                                    (selectionChange)="onDoctorChange($event)">
+                                                    <mat-option [value]="doctor"
+                                                        *ngFor="let doctor of displayDoctorList">
+                                                        <ng-container *ngIf="currentLang == 'en'">
+                                                            {{doctor.doctorEn}}
+                                                        </ng-container>
+                                                        <ng-container *ngIf="currentLang == 'ar'">
+                                                            {{doctor.doctorAr}}
+                                                        </ng-container>
+                                                    </mat-option>
+                                                </mat-select>
+                                            </mat-form-field>
+                                        </div>
+                                        <div>
+                                            <mat-form-field appearance="outline" class="width100percent">
+                                                <mat-label>{{'preMarital.step3.date' | translate}}</mat-label>
+                                                <input matInput [matDatepicker]="picker" [min]="today" [max]="maxDate"
+                                                    (dateChange)="onDateChange($event)" formControlName="date">
+                                                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                                <mat-datepicker #picker></mat-datepicker>
+                                                <mat-hint>
+                                                    <mat-checkbox (change)="checkBoxChange($event)"
+                                                        [checked]="showFlexibleDays" color="primary">
+                                                        {{'preMarital.step3.showFlexibleDays' | translate}}
+                                                    </mat-checkbox>
+                                                </mat-hint>
+                                            </mat-form-field>
+                                        </div>
+                                    </div>
+                                    <div [dir]="currentLang == 'en' ? 'ltr': 'ltr'" *ngIf="timeSlots.length > 0"
+                                        class="time-slots-container mt-2">
+                                        <div [dir]="currentLang == 'en' ? 'ltr': 'rtl'"
+                                            class="time-slot-label fs14 mb-2">
+                                            {{'preMarital.step3.timeSlotLabel' | translate}}
+                                        </div>
+                                        <div *ngFor="let date of timeSlots"
+                                            [ngClass]="currentLang == 'en' ? 'me-2':'ms-2'">
+                                            <div class="fw-bold text-center date-holder">
+                                                {{date.date | date: 'dd MMM yyyy'}}
+                                            </div>
+                                            <div class="width100percent d-flex flex-wrap justify-content-center">
+                                                <div class="time-slot m-2" *ngFor="let slot of date.slots"
+                                                    (click)="onSelectTimeSlot(slot)"
+                                                    [ngClass]="selectedTimeslot && selectedTimeslot == slot ? 'selected-time-slot': ''">
+                                                    {{slot}}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center mt-4">
+                            <button (click)="previousStep(3)" class="bg-primary-1000 color-white" mat-flat-button
+                                [ngClass]="currentLang == 'en'? 'me-4': 'ms-4'">
+                                {{'common.prev' | translate}}
+                            </button>
+                            <button (click)="nextStep(3)" class="bg-primary-1000 color-white" mat-flat-button
+                                [ngClass]="currentLang == 'en'? 'me-4': 'ms-4'">
+                                {{'common.next' | translate}}
+                            </button>
+                        </div>
+                    </div>
+                </mat-step>
+            </mat-vertical-stepper>
+        </div>
+    </div>
+</div>

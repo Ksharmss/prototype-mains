@@ -1,0 +1,109 @@
+<div class="header-banner">
+    <div class="header">
+        <div class="container logo-row p-1 d-flex align-items-center justify-content-between">
+            <div class="logo-container d-flex">
+                <img src="./assets/svg/icp_long.svg" alt="" class="icp-header-logo">
+            </div>
+            <!-- <div class="col-sm-12 sol-md-6 col-lg-6 d-flex"> -->
+            <!-- <div class="d-flex align-items-center">
+                    <a class="cursor-pointer d-flex align-items-center pe-auto">
+                        <input type="text" class="form-control header-search-input" placeholder="Search">
+                        <i class="input-group-text text-primary-700 search-icon bi bi-search"></i>
+                    </a>
+                </div> -->
+            <div class="logo-container d-flex">
+                <img src="./assets/images/usrati-brown.png" alt="" class="handSign usrati-logo">
+            </div>
+            <!-- </div> -->
+        </div>
+        <hr>
+        <div class="container py-2 d-flex align-items-center justify-content-between"
+            [ngClass]="currentLang == 'en' ? 'flex-row': 'flex-row-reverse'">
+            <div class="col-md-9 col-lg-9 links d-flex flex-wrap d-none d-sm-none d-md-none d-lg-flex"
+                [ngClass]="currentLang == 'en' ? 'flex-row justify-content-start': 'flex-row-reverse'">
+                <div [ngClass]="currentLang == 'en' ? 'me-4': 'ms-4'">
+                    <a class="header-link d-flex align-items-center text-secondary-color">
+                        {{'header.links.home' | translate}}
+                    </a>
+                </div>
+                <div [ngClass]="currentLang == 'en' ? 'me-4': 'ms-4'">
+                    <a class="header-link d-flex align-items-center text-secondary-color">
+                        {{'header.links.about' | translate}}
+                    </a>
+                </div>
+                <div [dir]="currentLang == 'en' ? 'ltr': 'rtl'" [ngClass]="currentLang == 'en'? 'me-4': 'ms-4'">
+                    <a id="dropdownMenuButton2" data-bs-toggle="dropdown"
+                        class="header-link d-flex align-items-center text-secondary-color dropdown-toggle">
+                        {{'footer.help.title' | translate}}
+                    </a>
+                    <ul [dir]="currentLang == 'en' ? 'ltr': 'rtl'" class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton2">
+                        <li><a class="dropdown-item cursor-pointer"
+                                [ngClass]="currentLang == 'en'? 'text-start': 'text-end'">{{'footer.help.userGuide' |
+                                translate}}</a></li>
+                        <li><a class="dropdown-item cursor-pointer"
+                                [ngClass]="currentLang == 'en'? 'text-start': 'text-end'">{{'footer.help.faq' |
+                                translate}}</a></li>
+                        <li><a class="dropdown-item cursor-pointer"
+                                [ngClass]="currentLang == 'en'? 'text-start': 'text-end'">{{'footer.help.contactUs' |
+                                translate}}</a></li>
+                    </ul>
+                </div>
+                <div [dir]="currentLang == 'en' ? 'ltr': 'rtl'" [ngClass]="currentLang == 'en'? 'me-4': 'ms-4'">
+                    <a id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                        class="header-link d-flex align-items-center text-secondary-color dropdown-toggle">
+                        {{'partners.title' | translate}}
+                    </a>
+                    <ul [dir]="currentLang == 'en' ? 'ltr': 'rtl'" class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item cursor-pointer"
+                                [ngClass]="currentLang == 'en'? 'text-start': 'text-end'">{{'partners.fedGov' |
+                                translate}}</a></li>
+                        <li><a class="dropdown-item cursor-pointer"
+                                [ngClass]="currentLang == 'en'? 'text-start': 'text-end'">{{'partners.localGov' |
+                                translate}}</a></li>
+                        <li><a class="dropdown-item cursor-pointer"
+                                [ngClass]="currentLang == 'en'? 'text-start': 'text-end'">{{'partners.medical' |
+                                translate}}</a></li>
+                        <li><a class="dropdown-item cursor-pointer"
+                                [ngClass]="currentLang == 'en'? 'text-start': 'text-end'">{{'partners.all' |
+                                translate}}</a></li>
+                    </ul>
+                </div>
+                <div [ngClass]="currentLang == 'en' ? 'me-4': 'ms-4'">
+                    <a class="header-link d-flex align-items-center text-secondary-color">
+                        {{'common.dashboard' | translate}}
+                    </a>
+                </div>
+                <div [ngClass]="currentLang == 'en' ? 'me-4': 'ms-4'">
+                    <a class="header-link d-flex align-items-center text-secondary-color">
+                        {{'Homepage.tracklbl' | translate}}
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-3 actions-container d-flex"
+                [ngClass]="currentLang == 'en' ? 'justify-content-end': 'justify-content-start'">
+                <div class="d-flex">
+                    <div class="d-flex align-items-center gap-3"
+                        [ngClass]="currentLang == 'en' ? 'flex-row': 'flex-row-reverse'">
+                        <div class="header-link">
+                            <a *ngIf="currentLang == 'ar'" (click)="changeLang(currentLang)"
+                                class="icon text-secondary-color d-flex align-items center">
+                                English
+                            </a>
+                            <a *ngIf="currentLang == 'en'" (click)="changeLang(currentLang)"
+                                class="icon text-secondary-color d-flex align-items center">
+                                عربى
+                            </a>
+                        </div>
+                        <div>
+                            <div (click)="navigate()" class="me-3 avatar-container d-flex justify-content-center">
+                                <img src="./assets/images/avatar.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

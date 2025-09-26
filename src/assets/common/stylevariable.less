@@ -1,0 +1,350 @@
+@color-primary: #5a6175;
+@color-secondary: #344b61;
+@color-warn: #D83731;
+@color-black: #1B1D21;
+@color-white: #ffffff;
+@color-grey: #f3f3f4;
+@color-grey-3: #8e8e8e;
+@color-grey-4: #bfbfbf;
+@color-grey-6: #868e96;
+@color-grey-7: #555555;
+@color-green: #034003;
+@color-green-2: #023302;
+@color-green-3: #149b14;
+@gradient-1: linear-gradient(90deg, rgb(238 242 247) 0%, rgb(248 245 239) 100%);
+@gradient-2: linear-gradient(90deg, #d1d2d7, white);
+@gradient-4: linear-gradient(90deg, #d1d2d7, #c9cdd8);
+@gradient-3: linear-gradient(60deg, #d1d2d7, #c8c0ae);
+@gradient-card-left: linear-gradient(to left, #cecece, #808285);
+@gradient-card-right: linear-gradient(to right, #cecece, #808285);
+@bg-color: rgb(248, 249, 250);
+@color-dark-sand: #c8c0ae;
+@color-light-sand: #e5ddca;
+@color-warm-grey: #808285;
+@color-warm-grey-light: #cecece;
+@color-dark-grey: #5a6175;
+@color-light-grey: #c9cdd8;
+@color-table-bg: @color-warm-grey-light;
+
+@primary-color-map: {
+
+    50: @color-primary;
+
+    100: #F2EADB;
+
+    200: #E4D5B6;
+
+    300: #D6BE8E;
+
+    400: #5a6175;
+
+    500: @color-primary;
+
+    600: #99742D;
+
+    700: #7C5E24;
+
+    800: #5F481C;
+
+    900: #413213;
+
+    1000: #976345;
+
+}
+
+
+
+@secondary-color-map: {
+
+    50: @color-secondary;
+
+    100: #E8E9EE;
+
+    200: #D1D1DD;
+
+    300: #BABBCC;
+
+    400: #A2A3BA;
+
+    500: @color-secondary;
+
+    600: #747698;
+
+    700: #5D5F87;
+
+    800: #454875;
+
+    900: #2F3165;
+
+}
+
+
+
+
+// generates color classes for primary color map
+
+each(@primary-color-map, {
+
+    .text-primary-@{key} {
+
+        color: @value
+    }
+
+});
+
+
+
+// generates color classes for secondary color map
+
+each(@secondary-color-map, {
+
+    .text-secondary-@{key} {
+
+        color: @value
+    }
+
+});
+
+
+
+// generates bg classes for primary color map
+
+each(@primary-color-map, {
+
+    .bg-primary-@{key} {
+
+        background-color: @value
+    }
+
+});
+
+
+
+// generates bg classes for secondary color map
+
+each(@secondary-color-map, {
+
+    .bg-secondary-@{key} {
+
+        background-color: @value
+    }
+
+});
+
+
+
+.text-primary-color {
+
+    color: @color-primary;
+
+}
+
+
+
+.text-secondary-color {
+
+    color: @color-secondary
+}
+
+
+
+.bg-primary {
+
+    background-color: @color-primary !important;
+
+}
+
+
+
+.bg-second {
+
+    background-color: @color-secondary;
+
+}
+
+
+
+.bg-grey {
+
+    background-color: @color-grey;
+
+}
+
+
+
+.bg-white {
+
+    background-color: @color-white;
+
+}
+
+
+
+.color-white {
+
+    color: @color-white;
+
+}
+
+
+
+.color-black {
+
+    color: @color-black;
+
+}
+
+
+
+// .color-blue {
+
+//     color: @color-blue;
+
+// }
+
+
+
+.color-grey {
+
+    color: @color-grey
+}
+
+
+
+.color-primary {
+
+    color: @color-primary
+}
+
+
+
+.color-secondary {
+
+    color: @color-secondary
+}
+
+
+
+.color-warn {
+
+    color: @color-warn
+}
+
+
+
+// .color-orange {
+
+//     color: @color-orange-text
+// }
+
+
+
+.color-green {
+
+    color: green;
+
+}
+
+
+
+.color-dark-sand {
+
+    color: @color-dark-sand;
+
+}
+
+
+
+.bg-dark-sand {
+
+    background-color: @color-dark-sand;
+
+}
+
+
+
+.color-light-sand {
+
+    color: @color-light-sand;
+
+}
+
+
+
+.bg-light-sand {
+
+    background-color: @color-light-sand;
+
+}
+
+
+
+.color-warm-grey {
+
+    color: @color-warm-grey;
+
+}
+
+
+
+.bg-warm-grey {
+
+    background-color: @color-warm-grey;
+
+}
+
+
+
+.color-warm-grey-light {
+
+    color: @color-warm-grey-light;
+
+}
+
+
+
+.bg-warm-grey-light {
+
+    background-color: @color-warm-grey-light;
+
+}
+
+
+
+.color-dark-grey {
+
+    color: @color-dark-grey;
+
+}
+
+
+
+.bg-dark-grey {
+
+    background-color: @color-dark-grey;
+
+}
+
+
+
+.color-light-grey {
+
+    color: @color-light-grey;
+
+}
+
+
+
+.bg-light-grey {
+
+    background-color: @color-light-grey;
+
+}
+
+
+
+.cursor-pointer {
+
+    cursor: pointer;
+
+}

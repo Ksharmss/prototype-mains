@@ -1,0 +1,188 @@
+@import '../../assets/common/stylevariable.less';
+
+.design-dashboard-container {
+    .card-and-text-container {
+        background: @gradient-1;
+    }
+
+    .new-card {
+        will-change: transform;
+        width: 280px;
+        height: 220px;
+        border-radius: 10px;
+        border: 1px solid @color-dark-grey;
+        position: relative;
+        background-color: white;
+        box-shadow: 0 10px 20px -11px #000,
+            -10px 0 20px -21px #000;
+        margin-bottom: 40px;
+
+        &:hover {
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+            transform: scale(1.05);
+        }
+
+        .new-card-content {
+            padding: 20px;
+
+            .title {
+                margin-top: 10px;
+                text-align: center;
+                font-weight: bold;
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            .content {
+                font-size: 13px;
+            }
+
+            .icon-holder {
+                position: absolute;
+                border-radius: 50%;
+                background-color: @color-dark-sand;
+                top: -32px;
+                left: 16px;
+                height: 60px;
+                width: 60px;
+                text-align: center;
+
+                i {
+                    position: absolute;
+
+                    &::before {
+                        font-size: 40px !important;
+                    }
+                }
+
+                .bi-hospital {
+                    top: 5px;
+                    left: 11px;
+                }
+
+                .fa-vials {
+                    &::before {
+                        position: absolute;
+                        right: -22px;
+                        top: 11px;
+                    }
+                }
+
+                .ui-familybook {
+                    top: 5px;
+                    left: 11px
+                }
+
+                .ui-housing-grant {
+                    top: 7px;
+                    left: 4px;
+                }
+
+                .ui-marriage-grant {
+                    top: 5px;
+                    left: 4px;
+                }
+
+                .ui-nbb {
+                    top: 6px;
+                    left: 16px;
+                }
+
+                .ui-survey {
+                    top: 5px;
+                    left: 13px;
+                }
+            }
+
+            .entity-container {
+                height: 65px;
+
+                .entity-icon {
+                    margin-right: 20px;
+
+                    i {
+                        font-size: 20px;
+                        color: @color-dark-sand;
+                    }
+                }
+
+                .entity-text {
+                    color: @color-dark-grey
+                }
+            }
+
+            .app-id-container {
+                .app-id-icon {
+                    margin-right: 20px;
+
+                    i {
+                        font-size: 20px;
+                        color: @color-dark-sand;
+                    }
+                }
+
+                .app-id-text {
+                    color: @color-dark-grey;
+                }
+            }
+        }
+
+        .status-container {
+            height: 10px;
+            width: 100%;
+            border-radius: 10px;
+            position: absolute;
+            bottom: 0px;
+        }
+
+        .card-highlighter-pending {
+            background-color: @color-grey-4;
+        }
+
+        .card-highlighter-active {
+            background-color: @color-dark-grey;
+        }
+    }
+
+    .new-card-ar {
+        .icon-holder {
+            right: 16px;
+        }
+
+        .entity-container {
+            .entity-icon {
+                margin-left: 20px;
+            }
+        }
+
+        .app-id-container {
+            .app-id-icon {
+                margin-left: 20px;
+            }
+        }
+    }
+
+    .new-card-pending {
+        .new-card-content {
+            .icon-holder {
+                background-color: @color-grey-4;
+            }
+
+            .title,
+            .entity-icon-i,
+            .entity-text,
+            .app-id-icon-i,
+            .app-id-text {
+                color: @color-grey-4 !important
+            }
+        }
+
+        &:hover {
+            z-index: 99 !important;
+            transition: transform 0.3s ease-in-out;
+            transform: none;
+            cursor: auto;
+        }
+    }
+}

@@ -1,0 +1,149 @@
+<div class="pre-marital-reschedule-container">
+    <app-header-banner pageTitle="{{'common.rescheduleAppointment' | translate}}"></app-header-banner>
+    <div [dir]="currentLang == 'en'?'ltr': 'rtl'" class="container">
+        <div class="step-container">
+            <div class="partner-appointment-container">
+                <div class="partner-label bg-primary-1000 color-white">
+                    {{'preMarital.step3.partnerLabel' | translate}}
+                </div>
+                <div class="d-flex row row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+                    <div>
+                        <mat-form-field appearance="outline" class="width100percent disabled-form-field">
+                            <mat-label class="fw-bold">{{'preMarital.step2.name' | translate}}</mat-label>
+                            <input type="text" matInput readonly
+                                [value]="currentLang == 'en' ? partnerDetails.partnerFullNameEn: partnerDetails.partnerFullNameAr">
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-form-field appearance="outline" class="width100percent disabled-form-field">
+                            <mat-label class="fw-bold">{{'preMarital.step3.emirate' |
+                                translate}}</mat-label>
+                            <input type="text" matInput readonly
+                                [value]="currentLang == 'en' ? partnerDetails.emirateEn: partnerDetails.emirateAr">
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-form-field appearance="outline" class="width100percent disabled-form-field">
+                            <mat-label class="fw-bold">{{'preMarital.step3.healthCenter' |
+                                translate}}</mat-label>
+                            <input type="text" matInput readonly
+                                [value]="currentLang == 'en' ? partnerDetails.healthCenterEn: partnerDetails.healthCenterAr">
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-form-field appearance="outline" class="width100percent disabled-form-field">
+                            <mat-label class="fw-bold">{{'preMarital.step3.doctor' | translate}}</mat-label>
+                            <input type="text" matInput readonly
+                                [value]="currentLang == 'en' ? partnerDetails.doctorEn: partnerDetails.doctorAr">
+                        </mat-form-field>
+                    </div>
+                    <div>
+                        <mat-form-field appearance="outline" class="width100percent disabled-form-field">
+                            <mat-label class="fw-bold">{{'preMarital.step3.dateTime' |
+                                translate}}</mat-label>
+                            <input type="text" matInput readonly [value]="partnerDetails.dateTime">
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
+            <div class="user-appointment-container">
+                <div class="fs22 user-label text-primary-1000 fw-bold-mb-2">
+                    {{'preMarital.step3.userLabel' | translate}}
+                </div>
+                <div class="form-container">
+                    <form [formGroup]="userAppointmentForm">
+                        <div class="d-flex row row-cols-sm-1 row-cols-md-2 row-cols-lg-4">
+                            <div>
+                                <mat-form-field appearance="outline" class="width100percent">
+                                    <mat-label>{{'preMarital.step3.emirate' | translate}}</mat-label>
+                                    <mat-select [disabled]="true" name="emirate" required formControlName="emirate">
+                                        <mat-option [value]="emirate" *ngFor="let emirate of emiratesList">
+                                            <ng-container *ngIf="currentLang == 'en'">
+                                                {{emirate.emirateNameEn}}
+                                            </ng-container>
+                                            <ng-container *ngIf="currentLang == 'ar'">
+                                                {{emirate.emirateNameAr}}
+                                            </ng-container>
+                                        </mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                            <div>
+                                <mat-form-field appearance="outline" class="width100percent">
+                                    <mat-label>{{'preMarital.step3.healthCenter' | translate}}</mat-label>
+                                    <mat-select [disabled]="true" name="healthCenter" required
+                                        formControlName="healthCenter">
+                                        <mat-option [value]="center" *ngFor="let center of healthCenterList">
+                                            <ng-container *ngIf="currentLang == 'en'">
+                                                {{center.healthCenterEn}}
+                                            </ng-container>
+                                            <ng-container *ngIf="currentLang == 'ar'">
+                                                {{center.healthCenterAr}}
+                                            </ng-container>
+                                        </mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                            <div>
+                                <mat-form-field appearance="outline" class="width100percent">
+                                    <mat-label>{{'preMarital.step3.doctor' | translate}}</mat-label>
+                                    <mat-select [disabled]="true" name="doctor" required formControlName="doctor">
+                                        <mat-option [value]="doctor" *ngFor="let doctor of doctorList">
+                                            <ng-container *ngIf="currentLang == 'en'">
+                                                {{doctor.doctorEn}}
+                                            </ng-container>
+                                            <ng-container *ngIf="currentLang == 'ar'">
+                                                {{doctor.doctorAr}}
+                                            </ng-container>
+                                        </mat-option>
+                                    </mat-select>
+                                </mat-form-field>
+                            </div>
+                            <div>
+                                <mat-form-field appearance="outline" class="width100percent">
+                                    <mat-label>{{'preMarital.step3.date' | translate}}</mat-label>
+                                    <input matInput [matDatepicker]="picker" [min]="today" [max]="maxDate"
+                                        (dateChange)="onDateChange($event)" formControlName="date">
+                                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                    <mat-datepicker #picker></mat-datepicker>
+                                    <mat-hint>
+                                        <mat-checkbox (change)="checkBoxChange($event)" [checked]="showFlexibleDays"
+                                            color="primary">
+                                            {{'preMarital.step3.showFlexibleDays' | translate}}
+                                        </mat-checkbox>
+                                    </mat-hint>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                        <div [dir]="currentLang == 'en' ? 'ltr': 'ltr'" *ngIf="timeSlots.length > 0"
+                            class="time-slots-container mt-2">
+                            <div [dir]="currentLang == 'en' ? 'ltr': 'rtl'" class="time-slot-label fs14 mb-2">
+                                {{'preMarital.step3.timeSlotLabel' | translate}}
+                            </div>
+                            <div *ngFor="let date of timeSlots" [ngClass]="currentLang == 'en' ? 'me-2':'ms-2'">
+                                <div class="fw-bold text-center date-holder">
+                                    {{date.date | date: 'dd MMM yyyy'}}
+                                </div>
+                                <div class="width100percent d-flex flex-wrap justify-content-center">
+                                    <div class="time-slot m-2" *ngFor="let slot of date.slots"
+                                        (click)="onSelectTimeSlot(slot)"
+                                        [ngClass]="selectedTimeslot && selectedTimeslot == slot ? 'selected-time-slot': ''">
+                                        {{slot}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="buttons-container mt-4 d-flex justify-content-center">
+            <button class="bg-white" mat-stroked-button (click)="cancel()">
+                {{'common.cancel' | translate}}
+            </button>
+            <button class="mx-4 bg-warm-grey color-white" mat-flat-button (click)="done()">
+                {{'common.rescheduleAppointment' | translate}}
+            </button>
+        </div>
+    </div>
+</div>

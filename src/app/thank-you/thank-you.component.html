@@ -1,0 +1,159 @@
+<div class="pre-marital-screening-thank-you-container">
+    <app-header-banner pageTitle="{{'common.thankYou' | translate}}"></app-header-banner>
+    <div class="container">
+        <div class="payment-information-container mb-4">
+            <div [ngClass]="currentLang == 'en'? 'flex-lg-row': 'flex-md-row-reverse flex-lg-row-reverse'"
+                class="d-flex flex-column flex-sm-column flex-md-row flex-lg-row row result-container align-items-center">
+                <div class="col-sm-12 col-md-4 col-lg-4 icon-holder d-flex" [ngClass]="currentLang == 'en'? 'justify-content-center justify-content-sm-center justify-content-md-end justify-content-lg-end':
+            'justify-content-center justify-content-sm-center justify-content-md-start justify-content-lg-start'">
+                    <i class="bg-white bi bi-check-circle-fill"></i>
+                </div>
+                <div class="col-sm-12 col-md-8 col-lg-8 result-title d-flex flex-column" [ngClass]="currentLang == 'en'? 'justify-content-center justify-content-sm-center justify-content-md-start justify-content-lg-start': 
+            'justify-content-center justify-content-sm-center justify-content-md-end justify-content-lg-end'">
+                    <div class="fs22" [dir]="currentLang == 'en'? 'ltr': 'rtl'" [ngClass]="currentLang == 'en'? 'text-center text-sm-center text-md-start text-lg-start' : 
+            'text-center text-sm-center text-md-end text-lg-end'">
+                        <span>{{'preMarital.thankyou' | translate}}</span>
+                        <span>{{'preMarital.thankyou2' | translate}}</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container mb-2" [dir]="currentLang == 'en'? 'ltr': 'rtl'">
+            <div [dir]="currentLang == 'en'? 'ltr': 'rtl'" class="summary-container d-flex flex-wrap"
+                [ngClass]="currentLang == 'en'? 'en': 'ar'">
+                <div class="box col-12 col-sm-12 col-md-4 d-flex justify-content-center align-items-center">
+                    <div class="app">
+                        <div class="app-id text-center">{{'common.appId' | translate}}</div>
+                        <div class="app-id-value text-center">
+                            US2025PMS4236621
+                        </div>
+                    </div>
+                </div>
+                <div class="box col-12 col-sm-12 col-md-4 d-flex flex-column">
+                    <div class="details-holder mb-3 d-flex">
+                        <div class="icon-holder d-flex align-items-center">
+                            <i class="mx-2 fw-bold fa-solid fa-hospital"></i>
+                        </div>
+                        <div class="label-value-holder">
+                            <div class="label fw-bold">
+                                {{'preMarital.step3.healthCenter' | translate}}
+                            </div>
+                            <div class="value">
+                                <span>
+                                    {{currentLang == 'en' ?
+                                    savedData.appointmentDetails.healthCenter.healthCenterEn :
+                                    savedData.appointmentDetails.healthCenter.healthCenterAr
+                                    }}
+                                </span>
+                                <span>-</span>
+                                <span>
+                                    {{currentLang == 'en' ?
+                                    savedData.appointmentDetails.emirate.emirateNameEn :
+                                    savedData.appointmentDetails.emirate.emirateNameAr
+                                    }}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-holder mb-3 d-flex">
+                        <div class="icon-holder d-flex align-items-center">
+                            <i class="mx-2 fw-bold fa-solid fa-user-doctor"></i>
+                        </div>
+                        <div class="label-value-holder">
+                            <div class="label fw-bold">
+                                {{'preMarital.step3.doctor' | translate}}
+                            </div>
+                            <div class="value">
+                                {{currentLang == 'en' ?
+                                savedData.appointmentDetails.doctor.doctorEn:savedData.appointmentDetails.doctor.doctorAr
+                                }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-holder mb-3 d-flex">
+                        <div class="icon-holder d-flex align-items-center">
+                            <i class="mx-2 fw-bold fa-solid fa-calendar-days"></i>
+                        </div>
+                        <div class="label-value-holder">
+                            <div class="label fw-bold">
+                                {{'preMarital.appointmentDateTime' | translate}}
+                            </div>
+                            <div [dir]="currentLang == 'en' ? 'ltr': 'ltr'" class="value">
+                                <span> {{
+                                    savedData.appointmentDetails.date | date: 'd MMM y'
+                                    }}</span>
+                                <span>, {{savedData.selectedTimeSlot}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-holder mb-3 d-flex">
+                        <div class="icon-holder d-flex align-items-center">
+                            <i class="mx-2 fw-bold fa-solid fa-arrow-up-1-9"></i>
+                        </div>
+                        <div class="label-value-holder">
+                            <div class="label fw-bold">
+                                {{'preMarital.ehsRefId' | translate}}
+                            </div>
+                            <div class="value">
+                                PMFS-R-4
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box col-12 col-sm-12 col-md-4 d-flex flex-column">
+                    <div class="details-holder mb-3 d-flex" [dir]="currentLang == 'en'? 'ltr': 'rtl'">
+                        <div class="icon-holder d-flex align-items-center">
+                            <i class="mx-2 fw-bold fa-solid fa-calendar-days"></i>
+                        </div>
+                        <div class="label-value-holder">
+                            <div class="label fw-bold color-dark-grey">
+                                {{'thanks.timeanddatelbl' | translate}}
+                            </div>
+                            <div [dir]="currentLang == 'en' ? 'ltr': 'ltr'" class="value">
+                                {{ today | date: 'd MMM y, h:mm a' }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-holder mb-3 d-flex justify-content-between"
+                        [dir]="currentLang == 'en'? 'ltr': 'rtl'">
+                        <div class="d-flex">
+                            <div class="icon-holder d-flex align-items-center">
+                                <i class="mx-2 fw-bold fa-solid fa-money-check"></i>
+                            </div>
+                            <div class="label-value-holder">
+                                <div class="label fw-bold color-dark-grey">
+                                    {{'thanks.amountlbl' | translate}}
+                                </div>
+                                <div class="value">
+                                    100.71 <span>{{'familyBook.aed' | translate}}</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center cursor-pointer">
+                            <i class="fw-bold material-icons fs30 print-icon">print</i>
+                        </div>
+                    </div>
+                    <div class="details-holder mb-3 d-flex" [dir]="currentLang == 'en'? 'ltr': 'rtl'">
+                        <div class="icon-holder d-flex align-items-center">
+                            <i class="mx-2 fw-bold fa-solid fa-arrow-up-1-9"></i>
+                        </div>
+                        <div class="label-value-holder">
+                            <div class="label fw-bold color-dark-grey">
+                                {{'thanks.receiptlbl' | translate}}
+                            </div>
+                            <div class="value">
+                                10698699472839483292
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-container text-center mt-4">
+            <button (click)="navigate()" mat-flat-button class="mx-4 bg-warm-grey color-white">
+                {{'common.dashboard' | translate}}
+            </button>
+        </div>
+    </div>
+</div>

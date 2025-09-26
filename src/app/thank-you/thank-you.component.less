@@ -1,0 +1,106 @@
+@import '../../assets/common/stylevariable.less';
+
+.pre-marital-screening-thank-you-container {
+    .payment-information-container {
+        margin-top: 20px;
+
+        .icon-holder {
+            i {
+                font-size: 40px;
+                color: @color-green-2;
+            }
+        }
+    }
+
+    .en {
+        .details-holder {
+            .icon-holder {
+                i {
+                    margin-right: 20px !important;
+                }
+            }
+        }
+
+        .box.col-md-4 {
+            border: none;
+            border-right: 1px solid @color-black;
+
+            &:last-child {
+                border-right: none;
+            }
+        }
+    }
+
+    .ar {
+        .details-holder {
+            .icon-holder {
+                i {
+                    margin-left: 20px !important;
+                }
+            }
+        }
+
+        .box.col-md-4 {
+            border: none;
+            border-left: 1px solid @color-black;
+
+            &:last-child {
+                border-left: none;
+            }
+
+            .details-holder {
+                .icon-holder {
+                    i {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .summary-container {
+        border: 1px solid @color-black;
+
+        .box {
+            padding: 20px;
+
+            .app {
+                background-image: @gradient-2;
+                border: 1px solid @color-black;
+                padding: 20px;
+                border-radius: 10px;
+
+                .app-id {
+                    color: @color-grey-6;
+                    font-weight: 700;
+                }
+
+                .app-id-value {
+                    font-size: 24px;
+                    font-weight: 700;
+                    color: @color-grey-7;
+                }
+            }
+
+            .details-holder {
+                .icon-holder {
+                    i {
+                        font-size: 30px;
+                        width: 30px;
+                        color: @color-grey-7;
+                    }
+                }
+
+                .label-value-holder {
+                    .label {
+                        color: @color-grey-7;
+                    }
+
+                    .value {
+                        color: @color-grey-6;
+                    }
+                }
+            }
+        }
+    }
+}

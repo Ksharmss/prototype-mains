@@ -1,0 +1,39 @@
+<div class="inbox-container">
+    <app-header-banner pageTitle="{{'inbox.title' | translate}}"></app-header-banner>
+    <div class="container" [dir]="currentLang == 'en' ? 'ltr': 'rtl'">
+        <div class="inbox-items">
+            <div
+                class="marriage-certificate item-holder mb-4 p-2 d-flex flex-column flex-sm-column flex-md-row flex-lg-row justify-content-between">
+                <div class="col-sm-12 col-md-9 col-lg-10 icon-title d-flex align-items-center">
+                    <div class="icon" [ngClass]="currentLang == 'en'?'me-2': 'ms-2'">
+                        <i class="color-blue bi bi-bell"></i>
+                    </div>
+                    <div class="title color-blue fw-normal">
+                        {{'inbox.preMaritalDownload' | translate}}
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-2 action-btn d-flex align-items-center">
+                    <button (click)="navigate()" mat-flat-button class="bg-warm-grey fw-bold color-white">
+                        {{'common.download' | translate}}
+                    </button>
+                </div>
+            </div>
+            <div
+                class="marriage-certificate item-holder mb-4 p-2 d-flex flex-column flex-sm-column flex-md-row flex-lg-row justify-content-between">
+                <div class="col-sm-12 col-md-9 col-lg-10 icon-title d-flex align-items-center">
+                    <div class="icon" [ngClass]="currentLang == 'en'?'me-2': 'ms-2'">
+                        <i class="color-blue bi bi-bell"></i>
+                    </div>
+                    <div class="title color-blue fw-normal">
+                        {{'inbox.preMaritalScreening' | translate}}
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-2 action-btn d-flex align-items-center">
+                    <button (click)="book()" mat-flat-button class="bg-warm-grey fw-bold color-white">
+                        {{'common.bookAppointment' | translate}}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

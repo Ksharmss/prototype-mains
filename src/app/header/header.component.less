@@ -1,0 +1,107 @@
+@import '../../assets/common/stylevariable.less';
+
+.header-banner {
+    background: linear-gradient(to right, white, rgba(255, 255, 255, 0.91));
+    box-shadow: 0 0 12px 3px @color-primary;
+    padding: 0px 0px;
+
+    .actions-container {
+        .menu-icon {
+            font-size: 30px;
+            cursor: pointer;
+        }
+    }
+
+    .dropdown-item:active {
+        color: black !important;
+        background-color: #f3f3f4 !important;
+    }
+
+    .header-search-input {
+        &:focus {
+            border: 1px solid #ced4da;
+            box-shadow: none;
+        }
+    }
+
+    .logo-row {
+        .icp-header-logo {
+            width: 550px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+        .logo-container {
+            .usrati-logo {
+                padding: 10px;
+                width: 170px;
+            }
+
+            .UAE-logo {
+                width: 95px;
+            }
+        }
+
+        .input-group {
+            height: 40px;
+        }
+
+        .search-icon {
+            font-size: 30px;
+            height: 40px;
+            background-color: @color-primary;
+            color: @color-white;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .header-link {
+        font-weight: bold;
+        text-decoration: none;
+
+        a {
+            text-decoration: none;
+        }
+
+        &:hover {
+            color: @color-primary;
+            cursor: pointer;
+        }
+    }
+
+    .avatar-container {
+        cursor: pointer;
+
+        img {
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            box-shadow: 0px 5px 5px 0px #adb5bd;
+        }
+    }
+
+    hr {
+        margin: 0 0;
+    }
+}
+
+.smartpass-logo {
+    width: 250px;
+    border-radius: 5px;
+    margin: 5px auto;
+    display: inline-flex;
+
+    a {
+        outline: none !important;
+        margin: auto;
+    }
+}
+
+.custom-position {
+    text-align: center;
+}

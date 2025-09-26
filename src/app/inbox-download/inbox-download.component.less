@@ -1,0 +1,35 @@
+@import '../../assets/common/stylevariable.less';
+
+.inbox-container {
+    // padding-top: 30px;
+    margin-bottom: 150px;
+
+    .inbox-items {
+        margin: 30px 0px 100px 0px;
+
+        .item-holder {
+            background: @gradient-1;
+            box-shadow: rgb(41, 85, 112) 0px 0px 2px 1px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+
+            .icon-title {
+                .icon {
+                    font-size: 31px;
+                }
+
+                .title {
+                    font-size: 16px;
+                }
+            }
+
+            .action-btn {
+                padding: 10px;
+
+                button {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
