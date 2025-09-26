@@ -1,0 +1,293 @@
+
+
+.tree{
+      height: 600px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.tree ul {
+    padding-top: 20px; position: relative;
+
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+
+.tree li {
+    float: left; text-align: center;
+    list-style-type: none;
+    position: relative;
+    padding: 20px 5px 0 5px;
+
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+
+/*We will use ::before and ::after to draw the connectors*/
+
+.tree li::before, .tree li::after{
+    content: '';
+    position: absolute; top: 0; right: 50%;
+    border-top: 1.5px solid #dab026;;
+    width: 50%; height: 20px;
+}
+
+/*We need to remove left-right connectors from elements without 
+any siblings*/
+.tree li:only-child::after, .tree li:only-child::before {
+    display: none;
+}
+
+/*Remove space from the top of single children*/
+.tree li:only-child{ padding-top: 0;}
+
+
+/*Time to add downward connectors from parents*/
+.tree ul ul::before{
+    content: '';
+    position: absolute; top: 0;
+    border-left: 1.5px solid #dab026;
+    width: 0; height: 20px;
+}
+
+.tree li a{
+    border: 1px solid #344b61;
+    padding: 15px;
+    border-left: 8px solid #344b61;
+    border-right: 8px solid #344b61;
+    width: 250px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #666;
+    font-size: 13px;
+    display: inline-block;
+    font-weight: 800;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+
+
+
+.tree ul ul ul ul li a {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    padding: 20px;
+    text-decoration: none;
+    color: #666;
+    font-weight: 800;
+    font-size: 11px;
+    border: 1px solid #344b61;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    text-orientation: mixed !important;
+    white-space: nowrap; /* Prevent text from wrapping */
+    
+    writing-mode: vertical-rl; /* Vertical orientation */
+}
+
+
+
+.tree li::after{
+    right: auto; left: 50%;
+    border-left: 1.5px solid #dab026;
+}
+.tree ul ul ul::before {
+    content: '';
+    position: absolute; left: 50%; bottom: -20px;
+    border-left: 1.5px solid #dab026;
+    height: 20px;
+}
+/*Remove left connector from first child and 
+  right connector from last child*/
+.tree li:first-child::before, .tree li:last-child::after{
+    border: 0 none;
+}
+/*Adding back the vertical connector to the last nodes*/
+.tree li:last-child::before{
+    border-right: 1.5px solid #dab026;;
+    border-radius: 0 5px 0 0;
+    -webkit-border-radius: 0 5px 0 0;
+    -moz-border-radius: 0 5px 0 0;
+}
+.tree li:first-child::after{
+    border-radius: 5px 0 0 0;
+    -webkit-border-radius: 5px 0 0 0;
+    -moz-border-radius: 5px 0 0 0;
+}
+
+
+@media (max-width: 600px) {
+    .tree ul ul ul ul li a {
+        writing-mode: horizontal-tb;
+    }
+
+    .tree ul ul ul {
+        padding-top : 0;
+    }
+
+    .tree > ul > li > ul > li > ul > li {
+        padding: 0 0 0 20px;
+        display: flex;
+        align-items: center;
+        clear: left;
+        position: relative;
+        left: 50%;
+    }
+    .tree > ul > li > ul > li > ul > li::before {
+        height: 100%;
+    }
+    .tree > ul > li > ul > li > ul > li:last-child::before {
+        height: 50%;
+    }
+
+    .tree > ul > li > ul > li > ul > li > a {
+        writing-mode: vertical-rl;
+    }
+
+
+    .tree ul ul ul li::before {
+        width: 20px;
+        left: 0;
+        border-left: 1px solid #344b61 !important;
+        border-top: none;
+    }
+    .tree ul ul ul li:last-child::before {
+        border-bottom: 1.5px solid #dab026;;
+        border-right: none;
+        border-radius: 0 0 0 5px;
+        -webkit-border-radius: 0 0 0 5px;
+        -moz-border-radius: 0 0 0 5px;
+    }
+    .tree ul ul ul li::after {
+        width: 20px;
+        top: 50%;
+        left: 0;
+        border-left: 1.5px solid #dab026;
+        
+        border-radius: 0 !important;
+        -webkit-border-radius: 0 !important;
+        -moz-border-radius: 0 !important;
+    }
+
+    .tree ul ul ul ul {
+        display: inline-block;
+        padding: 0 0 0 20px;
+    }
+
+    .tree ul ul ul ul::before {
+        border-left: none;
+        border-top: 1.5px solid #dab026;;
+        width: 20px;
+        left: 0;
+        top: 50%;
+    }
+
+    .tree ul ul ul ul li {
+        float: none;
+        padding: 5px 0 5px 20px;
+    }
+
+    .tree ul ul ul ul li:first-child::before,
+    .tree ul ul ul li:last-child::after {
+        border: 0 none !important;
+    }
+    .tree ul ul ul ul li:first-child::after{
+        border-radius: 5px 0 0 0 !important;
+        -webkit-border-radius: 5px 0 0 0 !important;
+        -moz-border-radius: 5px 0 0 0 !important;
+    }
+   
+  }
+
+
+
+
+
+  @media (max-width: 768px) {
+    .tree {
+      flex-direction: column;
+      align-items: center;
+      overflow-x: auto;
+      padding: 10px 0;
+    }
+  
+    .tree ul {
+      padding-top: 0;
+      position: relative;
+    }
+  
+    .tree li {
+      float: none;                 /* disable horizontal float */
+      display: flex;
+      flex-direction: column;      /* stack children vertically */
+      align-items: center;
+      position: relative;
+      padding: 20px 0 0 0;
+    }
+  
+    /* Vertical connectors */
+    .tree li::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      border-left: 1px solid #dab026;
+      height: 20px;
+      width: 0;
+    }
+  
+    .tree li::after {
+      display: none; /* remove horizontal connectors */
+    }
+  
+    .tree li:first-child::before {
+      border: none; /* remove connector for root */
+    }
+  
+    /* Style the links/nodes */
+    .tree li a {
+      display: inline-block;
+      width: 90%;
+      max-width: 260px;
+      text-align: center;
+      padding: 12px;
+      font-size: 14px;
+      background: #fff;
+      border: 1px solid #dab026;
+      border-radius: 8px;
+      position: relative;
+      z-index: 1;
+    }
+  
+    /* Children container */
+    .tree ul ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+      margin: 0;
+    }
+  
+    /* Icons inside nodes */
+    .tree li a img {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+    }
+  }
+  
+  
