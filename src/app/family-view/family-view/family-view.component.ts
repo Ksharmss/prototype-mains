@@ -36,7 +36,7 @@ export class FamilyViewComponent implements OnInit {
         ]
       },
       {
-        name: 'SALMA SAEED W.O.ALI MUBARAK AL MANSOURI',
+        name: 'SALMA SAEED MUBARAK AL MANSOURI',
         children: [
           { name: 'Layek',gender:"boy" },
           { name: 'Nora',gender:"girl" },
