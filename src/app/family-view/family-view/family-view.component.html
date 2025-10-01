@@ -1,35 +1,25 @@
 <div class="tree">
-    <ul>
-      <li>
-        
-        <a href="#" style="margin-left: 1.5rem;position: relative;padding-top: 3rem;"> <img  src="./assets/images/men.png" style="width: 40px;width: 40px;
-      position: absolute;
-      top: 8px;
-      left: 6.5rem;" alt=""> {{ familyData2.name }}</a>
-        
-        <ul>
-          <li  *ngFor="let wife of familyData2.wives">
-            
-             <a href="#" class="women" style="position: relative;padding-top: 2.5rem;"><img  src="./assets/images/women.png" style="width: 27px;
-      position: absolute;
-      top: 8px;
-      left: 6.5rem;" alt="">{{ wife.name }}</a>
-            <ul class="children">
-              <li *ngFor="let child of wife.children">
-                <a href="#" style="padding-top: 2.5rem;"><img   [src]="child.gender=='boy'?'./assets/images/child.png':'./assets/images/babygirl.png'" style="width: 27px;
-      position: absolute;
-      top: 24px;
-      left: 7.2rem;padding-top: 5px;" alt="">{{ child.name }}</a>
-               
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </div>
+  <ul>
+    <li>
+      <!-- Husband -->
+      <a class="man pd-t" style="margin-left: 1.5rem;"><img  class="icons wd-man" src="./assets/images/men.png">{{ familyData2.name }}</a>
+      
+      <!-- Wives container -->
+      <ul class="wives">
+        <li *ngFor="let wife of familyData2.wives">
+          <a class="woman pd-t"><img  class="icons" src="./assets/images/women.png" >{{ wife.name }}</a>
+          <ul class="children">
+            <li *ngFor="let child of wife.children">
+              <a class="child pd-t"><img  class="icons icons-child" [src]="child.gender=='boy'?'./assets/images/child.png':'./assets/images/babygirl.png'">{{ child.name }}</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
   
-  <div class="tree">
+  <!-- <div class="tree mobile-view">
     <ul>
       <li>
         <a href="#" style="margin-left: 1.2rem;position: relative;padding-top: 3rem;"><img  src="./assets/images/men.png" style="width: 40px;width: 40px;
@@ -57,7 +47,27 @@
         </ul>
       </li>
     </ul>
+  </div> -->
+  
+  
+  
+  <div class="tree">
+    <ul>
+      <li>
+        <!-- Husband -->
+        <a class="man pd-t"><img  class="icons wd-man" src="./assets/images/men.png">{{ familyData.name }}</a>
+        
+        <!-- Wives container -->
+        <ul class="wives">
+          <li *ngFor="let wife of familyData.wives">
+            <a class="woman pd-t"><img  class="icons" src="./assets/images/women.png" >{{ wife.name }}</a>
+            <ul class="children">
+              <li *ngFor="let child of wife.children">
+                <a class="child pd-t"><img  class="icons icons-child" [src]="child.gender=='boy'?'./assets/images/child.png':'./assets/images/babygirl.png'">{{ child.name }}</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
   </div>
-  
-  
-  

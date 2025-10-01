@@ -127,167 +127,61 @@ any siblings*/
     -webkit-border-radius: 5px 0 0 0;
     -moz-border-radius: 5px 0 0 0;
 }
+.mobile-view
+{
+    display: none;
+}
+.icons{
+    width: 35px;
+    position: relative;
+    left: 4.5rem;
+    bottom: 2rem;
+    padding-top: 5px;
+}
+ .wd-man
+ {
+    width: 45px!important;
+ }
+.pd-t
+{
+    padding-top: 2rem!important;
+}
+.icons-child
+{
+    left: 2.5rem;
+}
 
-
-@media (max-width: 600px) {
-    .tree ul ul ul ul li a {
-        writing-mode: horizontal-tb;
+@media (max-width: 768px) {
+    .tree ul.wives {
+      display: flex;
+      flex-direction: row;    /* wives side by side */
+      justify-content: center;
+      gap: 10px;
+      padding-top: 20px;
     }
 
-    .tree ul ul ul {
-        padding-top : 0;
+    .mobile-view
+    {
+        display: block!important;
     }
-
-    .tree > ul > li > ul > li > ul > li {
-        padding: 0 0 0 20px;
-        display: flex;
-        align-items: center;
-        clear: left;
-        position: relative;
-        left: 50%;
-    }
-    .tree > ul > li > ul > li > ul > li::before {
-        height: 100%;
-    }
-    .tree > ul > li > ul > li > ul > li:last-child::before {
-        height: 50%;
-    }
-
-    .tree > ul > li > ul > li > ul > li > a {
-        writing-mode: vertical-rl;
-    }
-
-
-    .tree ul ul ul li::before {
-        width: 20px;
-        left: 0;
-        border-left: 1px solid #344b61 !important;
-        border-top: none;
-    }
-    .tree ul ul ul li:last-child::before {
-        border-bottom: 1.5px solid #dab026;;
-        border-right: none;
-        border-radius: 0 0 0 5px;
-        -webkit-border-radius: 0 0 0 5px;
-        -moz-border-radius: 0 0 0 5px;
-    }
-    .tree ul ul ul li::after {
-        width: 20px;
-        top: 50%;
-        left: 0;
-        border-left: 1.5px solid #dab026;
-        
-        border-radius: 0 !important;
-        -webkit-border-radius: 0 !important;
-        -moz-border-radius: 0 !important;
-    }
-
-    .tree ul ul ul ul {
-        display: inline-block;
-        padding: 0 0 0 20px;
-    }
-
-    .tree ul ul ul ul::before {
-        border-left: none;
-        border-top: 1.5px solid #dab026;;
-        width: 20px;
-        left: 0;
-        top: 50%;
-    }
-
-    .tree ul ul ul ul li {
-        float: none;
-        padding: 5px 0 5px 20px;
-    }
-
-    .tree ul ul ul ul li:first-child::before,
-    .tree ul ul ul li:last-child::after {
-        border: 0 none !important;
-    }
-    .tree ul ul ul ul li:first-child::after{
-        border-radius: 5px 0 0 0 !important;
-        -webkit-border-radius: 5px 0 0 0 !important;
-        -moz-border-radius: 5px 0 0 0 !important;
-    }
-   
-  }
-
-
-
-
-
-  @media (max-width: 768px) {
-    .tree {
+  
+    .tree ul.wives li {
+      display: flex;
       flex-direction: column;
       align-items: center;
-      overflow-x: auto;
-      padding: 10px 0;
+      margin: 0 5px;
     }
   
-    .tree ul {
-      padding-top: 0;
-      position: relative;
-    }
-  
-    .tree li {
-      float: none;                 /* disable horizontal float */
-      display: flex;
-      flex-direction: column;      /* stack children vertically */
-      align-items: center;
-      position: relative;
-      padding: 20px 0 0 0;
-    }
-  
-    /* Vertical connectors */
-    .tree li::before {
+    .tree ul.wives::before {
       content: '';
       position: absolute;
       top: 0;
       left: 50%;
-      border-left: 1px solid #dab026;
+      border-left: 1.5px solid #dab026; /* connector from husband */
       height: 20px;
-      width: 0;
-    }
-  
-    .tree li::after {
-      display: none; /* remove horizontal connectors */
-    }
-  
-    .tree li:first-child::before {
-      border: none; /* remove connector for root */
-    }
-  
-    /* Style the links/nodes */
-    .tree li a {
-      display: inline-block;
-      width: 90%;
-      max-width: 260px;
-      text-align: center;
-      padding: 12px;
-      font-size: 14px;
-      background: #fff;
-      border: 1px solid #dab026;
-      border-radius: 8px;
-      position: relative;
-      z-index: 1;
-    }
-  
-    /* Children container */
-    .tree ul ul {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding-top: 20px;
-      margin: 0;
-    }
-  
-    /* Icons inside nodes */
-    .tree li a img {
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
-      top: 0;
     }
   }
+  
+  
   
   
